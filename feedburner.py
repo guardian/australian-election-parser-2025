@@ -311,7 +311,7 @@ def senate_render(data: Dict) -> Dict:
 
     return render_data
 
-def main():
+def burnfeeds():
     # Fetch Google doc data
     
     googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
@@ -395,4 +395,4 @@ def main():
     print(f"Finished in {timeRun}")
 
 if __name__ == "__main__":
-    main() 
+    burnfeeds() 

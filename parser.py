@@ -10,7 +10,7 @@ import emlparse
 import logresults
 import schedule
 import time
-
+from feedburner import burnfeeds
 
 # the 2025 election ID is 31496
 # the 2022 election ID for testing is 27966
@@ -216,6 +216,7 @@ def parse_results(test):
 
 	print("Done, results all saved")
 	ftp.quit()
+	burnfeeds()
 
 # Use scheduler to time function every 2 minutes
 

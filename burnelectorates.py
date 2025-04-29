@@ -99,7 +99,7 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
 
     return info
 
-def main():
+def burnElectorates():
     # Fetch Google doc data
     
     googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
@@ -147,4 +147,4 @@ def main():
     print(f"Finished in {timeRun}")
 
 if __name__ == "__main__":
-    main() 
+    burnElectorates()
