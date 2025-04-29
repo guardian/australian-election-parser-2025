@@ -336,6 +336,8 @@ def burnfeeds():
     electorates_map = {item['electorate']: item for item in googledoc['electorates']}
     places = [item['electorate'] for item in googledoc['electorates']]
     divisions = {item['name']: item for item in latest_data['divisions']}
+
+    # What happens if there are parties not in the party list?
     parties = {item['partyCode'].lower(): item for item in googledoc['partyNames']}
     
     # Process data

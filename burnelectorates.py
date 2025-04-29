@@ -6,7 +6,7 @@ import json
 
 googledoc_key = "1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0"
 startTime = datetime.now()
-uploadElectorates = True
+uploadElectorates = False
 
 config = {
     "title": "",
@@ -42,6 +42,7 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
     candidates = sorted(aec_result['candidates'], key=lambda x: x['votesTotal'], reverse=True)
     
     candidate_swing_data = next((item['tcp'] for item in swing if item['name'] == electorate), None)
+
     swing_info = {'status': False}
 
     if candidate_swing_data and len(candidate_swing_data) == 2 and swing_time:
@@ -122,8 +123,12 @@ def burnElectorates():
     
     # Create data maps
     electorates_map = {item['electorate']: item for item in googledoc['electorates']}
+    print(electorates_map)
     places = [item['electorate'] for item in googledoc['electorates']]
     divisions = {item['name']: item for item in latest_data['divisions']}
+
+    # Custom party names from the Google Doc
+    
     parties = {item['partyCode'].lower(): item for item in googledoc['partyNames']}
     
     googledoc['parties'] = parties
