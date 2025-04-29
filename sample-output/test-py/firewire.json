@@ -1,0 +1,146 @@
+{
+    "TOTAL_SEATS": 151,
+    "MAJORITY_SEATS": 76,
+    "partyData": [
+        {
+            "key": "alp",
+            "value": 77,
+            "name": "Labor party",
+            "shortName": "Labor",
+            "alignment": "left"
+        },
+        {
+            "key": "lib",
+            "value": 27,
+            "name": "Liberal party",
+            "shortName": "Liberal",
+            "alignment": "right"
+        },
+        {
+            "key": "lnp",
+            "value": 21,
+            "name": "Liberal National party",
+            "shortName": "Liberal Nat",
+            "alignment": "right"
+        },
+        {
+            "key": "nat",
+            "value": 10,
+            "name": "National party",
+            "shortName": "National",
+            "alignment": "right"
+        },
+        {
+            "key": "ind",
+            "value": 10,
+            "name": "Independent",
+            "shortName": "Independent",
+            "alignment": "right"
+        },
+        {
+            "key": "grn",
+            "value": 4,
+            "name": "Greens",
+            "shortName": "Greens",
+            "alignment": "left"
+        },
+        {
+            "key": "kap",
+            "value": 1,
+            "name": "Katter party",
+            "shortName": "Katter",
+            "alignment": "right"
+        },
+        {
+            "key": "ca",
+            "value": 1,
+            "name": "Centre Alliance",
+            "shortName": "Centre Alliance",
+            "alignment": "right"
+        }
+    ],
+    "resultCount": 8,
+    "partyListLeft": [
+        {
+            "key": "alp",
+            "value": 77,
+            "name": "Labor party",
+            "shortName": "Labor",
+            "alignment": "left"
+        },
+        {
+            "key": "lib",
+            "value": 27,
+            "name": "Liberal party",
+            "shortName": "Liberal",
+            "alignment": "right"
+        },
+        {
+            "key": "lnp",
+            "value": 21,
+            "name": "Liberal National party",
+            "shortName": "Liberal Nat",
+            "alignment": "right"
+        },
+        {
+            "key": "nat",
+            "value": 10,
+            "name": "National party",
+            "shortName": "National",
+            "alignment": "right"
+        }
+    ],
+    "header1": "seats",
+    "partyListRight": [
+        {
+            "key": "ind",
+            "value": 10,
+            "name": "Independent",
+            "shortName": "Independent",
+            "alignment": "right"
+        },
+        {
+            "key": "grn",
+            "value": 4,
+            "name": "Greens",
+            "shortName": "Greens",
+            "alignment": "left"
+        },
+        {
+            "key": "kap",
+            "value": 1,
+            "name": "Katter party",
+            "shortName": "Katter",
+            "alignment": "right"
+        },
+        {
+            "key": "ca",
+            "value": 1,
+            "name": "Centre Alliance",
+            "shortName": "Centre Alliance",
+            "alignment": "right"
+        }
+    ],
+    "header2": "seats",
+    "updated": "2025-04-27T19:19:32.788271",
+    "votesCountedPercent": 89.82,
+    "nationalSwing": {
+        "tppCoalition": -3.66,
+        "tppLabor": 3.66
+    },
+    "displaySwing": true,
+    "twoParty": [
+        {
+            "name": "Coalition",
+            "seats": 58,
+            "percentage": 38.41059602649007,
+            "party": "coal"
+        },
+        {
+            "name": "Labor",
+            "seats": 77,
+            "percentage": 50.993377483443716,
+            "party": "alp"
+        }
+    ]
+}

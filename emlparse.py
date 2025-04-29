@@ -9,6 +9,34 @@ AWS_SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
 if 'AWS_SESSION_TOKEN' in os.environ:
 	AWS_SESSION = os.environ['AWS_SESSION_TOKEN']
 
+majorPartyCodes = [
+	'ALP', 
+	'CLP', 
+	'CP', 
+	'FLP', 
+	'LCL', 
+	'LCP', 
+	'LIB', 
+	'LNQ',
+	'LP',
+	'NAT',
+	'NCP',
+	'NP',
+	'LNP'
+]
+
+majorVote2019 = 74.78
+minorVote2019 = 25.22
+
+majorVote2022 = 68.28
+minorVote2022 = 31.72
+
+with open('historic-data/electorate_votes_2019.json', 'r') as f:
+	historicData2019 = json.load(f)
+
+with open('historic-data/electorate_votes_2022.json', 'r') as f:
+	historicData2022 = json.load(f)
+
 def convertPartyCode(partycode):
 	partyCodes = {'LP':'LIB', 'NP':'NAT'}
 	if partycode in partyCodes:
@@ -81,6 +109,36 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 					for partygroup in partyNational
 				]				
 
+				# Get the national major -> Independent/minor swing
+
+				major_national_new = 0
+				minor_national_new = 0
+				total_new = 0
+
+				for partygroup in results_json['partyNationalResults']:
+					# Check if major party
+					if partygroup['coalition_short'] in majorPartyCodes:
+						major_national_new += partygroup['votesTotal']
+					else:
+						minor_national_new += partygroup['votesTotal']
+
+				total_new = major_national_new + minor_national_new
+				print("major_national_new: ", major_national_new)
+				print("minor_national_new: ", minor_national_new)
+				print("total_new: ", total_new)
+
+				major_national_pct = round(major_national_new / total_new * 100,2)
+				minor_national_pct = round(minor_national_new / total_new * 100,2)
+				print("major_national_pct: ", major_national_pct)
+				print("minor_national_pct: ", minor_national_pct)
+
+				major_national_swing = major_national_pct - majorVote2019
+				minor_national_swing = minor_national_pct - minorVote2019
+				print("major_national_swing: ", major_national_swing)
+				print("minor_national_swing: ", minor_national_swing)
+
+				results_json['nationalSwing']['toMajor'] = major_national_swing
+				results_json['nationalSwing']['toMinor'] = minor_national_swing
 
 				summary_json['enrollment'] = int(election['House']['Analysis']['National']['Enrolment'])
 				summary_json['votesCountedPercent'] = float(election['House']['Analysis']['National']['FirstPreferences']['Total']['Votes']['@Percentage'])
@@ -90,14 +148,23 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 
 				for contest in election['House']['Contests']['Contest']:
 
+					# print("#######################")
+					# print(contest['PollingDistrictIdentifier']['Name'])
+				
+					currentElectorate = contest['PollingDistrictIdentifier']['Name']
+
+					# The object for the individual electorate JSON
 					electorates_json = {}
+
+					# The object for the swing JSON
 					swing_json = {}
+
+
 					electorates_json['id'] = int(contest['PollingDistrictIdentifier']['@Id'])
 					swing_json['id'] = electorates_json['id']
 					electorates_json['name'] = contest['PollingDistrictIdentifier']['Name']
 					swing_json['name'] = electorates_json['name']
-
-					# print(contest['PollingDistrictIdentifier']['Name'])
+					
 					electorates_json['state'] = contest['PollingDistrictIdentifier']['StateIdentifier']['@Id']
 					swing_json['state'] = electorates_json['state']
 
@@ -110,6 +177,7 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 							'candidate_name': candidate['eml:CandidateIdentifier']['eml:CandidateName'],
 							'votesTotal': int(candidate['Votes']['#text']),
 							'votesPercent': float(candidate['Votes']['@Percentage']),
+							'votesHistoric': int(candidate['Votes']['@Historic']),
 							'party_short': convertPartyCode(candidate_party(candidate,'short')),
 							'party_long':candidate_party(candidate,'long'),
 							'incumbent':candidate['Incumbent']['#text']
@@ -117,6 +185,7 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 						for candidate in candidates
 					]
 					# print contest['TwoCandidatePreferred']
+
 					if "@Restricted" not in contest['TwoCandidatePreferred'] and "@Maverick" not in contest['TwoCandidatePreferred']:
 						twoCandidatePreferred = contest['TwoCandidatePreferred']['Candidate']
 						electorates_json['twoCandidatePreferred'] = [
@@ -158,7 +227,50 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 					swing_json['tppCoalition'] = electorates_json['twoPartyPreferred'][0]['swing']
 					swing_json['tppLabor'] = electorates_json['twoPartyPreferred'][1]['swing']
 
-					# print electorates_json
+					# Calculate the major party - Independent/minor party swing
+
+					if currentElectorate in historicData2019:
+						major_party_last_election = historicData2019[currentElectorate]["Major"]
+						minor_ind_last_election = historicData2019[currentElectorate]["Indie_and_Minor"]
+						total_last_election = major_party_last_election + minor_ind_last_election
+
+						major_party_this_election = 0
+						minor_ind_this_election = 0
+						total_this_election = 0
+
+						# print(electorates_json['candidates'])
+
+						for candidate in electorates_json['candidates']:
+							# Check if major party
+
+							if candidate['party_short'] in majorPartyCodes:
+								major_party_this_election = major_party_this_election + candidate['votesTotal']
+		
+							# Else minor or independent
+							else:
+								minor_ind_this_election = minor_ind_this_election + candidate['votesTotal']
+
+
+						total_this_election = major_party_this_election + minor_ind_this_election
+
+						major_party_last_election_pct = major_party_last_election/total_last_election * 100
+						major_party_this_election_pct = major_party_this_election/total_this_election * 100
+						major_party_swing = major_party_this_election_pct - major_party_last_election_pct
+
+						# print("major_party_this_election", major_party_this_election,"major_party_last_election",major_party_last_election)
+						# print("minor_party_this_election", minor_ind_this_election,"minor_party_last_election",minor_ind_last_election)
+						# print("total_this_election", total_this_election,"total_last_election",total_last_election)
+
+						# print("major_party_last_election_pct", major_party_last_election_pct, "%")
+						# print("major_party_this_election_pct", major_party_this_election_pct,"%")
+						# print("major_party_swing", major_party_swing,"%")
+
+						swing_json['toMajor'] = round(major_party_swing,2)
+						swing_json['toMinor'] = round((-1 * major_party_swing),2)
+					else:
+						swing_json['toMajor'] = 0
+						swing_json['toMinor'] = 0
+
 					electorates_list.append(electorates_json)
 					swing_list.append(swing_json)			
 
@@ -229,3 +341,13 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 			print("Results not uploaded, uploading switched off")
 
 # eml_to_JSON('aec-mediafeed-results-standard-verbose-24310.xml','media feed',True,'20190726164221', True)	
+# def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
+# aec-mediafeed-results-standard-verbose-27966-end.xml 20220719103300
+if __name__ == "__main__":
+	print("Running parser")
+	eml_to_JSON(eml_file='sample-data/aec-mediafeed-results-standard-verbose-27966-end.xml',
+			 type='media feed',
+			 local=True,
+			 timestamp='20220719103300', 
+			 uploadPath="2025/05/aus-election/results-data-test",
+			 upload=False)	

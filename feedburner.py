@@ -1,9 +1,30 @@
-import boto3
+
 import json
 import requests
 from datetime import datetime
 from typing import Dict, List, Optional, Union
 import math
+from utils import get_json, get_local_json, get_latest_feed, upload_to_s3, save_to_file
+
+startTime = datetime.now()
+
+# The primary vote for the coalition in 2019
+coalition_old_primary = 41.44
+
+# The primary vote for the coalition in 2022
+# coalition_new_primary = 35.7
+
+if coalition_old_primary == 41.44:
+    print("WARNING: USING OLD PRIMARY COALITION")
+
+upload = True
+
+if not upload:
+    print("WARNING: NOT UPLOADING TO SERVER")
+
+uploadElectorates = False
+if not uploadElectorates:
+    print("WARNING: NOT UPLOADING ELECTORATES")
 
 config = {
     "title": "",
@@ -11,7 +32,8 @@ config = {
     "path": "embed/aus/2025/02/aus-election/results-data"
 }
 
-googledoc_key = "11WneZFp0CwnkDiBtQTTH_y-OjSzAlZR4c6rCPrQ_baA"
+# https://interactive.guim.co.uk/docsdata/1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0.json
+googledoc_key = "1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0"
 
 url = "https://interactive.guim.co.uk/2022/05/aus-election/results-data"
 
@@ -28,7 +50,7 @@ def get_alignment(key: str) -> str:
     elif key in right_aligned or key not in left_aligned:
         return "right"
 
-def compile(electorates: List[Dict], parties: Dict, summary_results: Dict, national_swing: float) -> Dict:
+def compile(electorates: List[Dict], options: List[Dict], parties: Dict, summary_results: Dict, national_swing: float) -> Dict:
     # Calculate tallies
     tallies = {}
     for electorate in electorates:
@@ -65,6 +87,8 @@ def compile(electorates: List[Dict], parties: Dict, summary_results: Dict, natio
         {'name': 'Labor', 'seats': lab_seats, 'percentage': lab_percentage, 'party': 'alp'}
     ]
 
+    displaySwing = False if options[0]['swing'] == "FALSE" else True
+
     render_data = {
         'TOTAL_SEATS': 151,
         'MAJORITY_SEATS': 76,
@@ -77,7 +101,8 @@ def compile(electorates: List[Dict], parties: Dict, summary_results: Dict, natio
         'updated': datetime.now().isoformat(),
         'votesCountedPercent': summary_results['votesCountedPercent'],
         'nationalSwing': national_swing,
-        'displaySwing': True
+        'displaySwing': displaySwing,
+        'outcome': options[0]['outcome']
     }
 
     render_data['twoParty'] = party_data_2pp
@@ -114,19 +139,19 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
     candidates = sorted(aec_result['candidates'], key=lambda x: x['votesTotal'], reverse=True)
     
     candidate_swing_data = next((item['tcp'] for item in swing if item['name'] == electorate), None)
-    swig_info = {'status': False}
+    swing_info = {'status': False}
 
     if candidate_swing_data and len(candidate_swing_data) == 2 and swing_time:
         if candidate_swing_data[0]['swing'] < candidate_swing_data[1]['swing']:
             candidate_swing_data.append(candidate_swing_data.pop(0))
 
         if candidate_swing_data[1]['swing'] > 0:
-            swig_info = {'status': False}
+            swing_info = {'status': False}
         else:
             multiplier = 3.333 if candidate_swing_data[0]['swing'] < 15 else 2 if candidate_swing_data[0]['swing'] < 25 else 1
             label = 15 if candidate_swing_data[0]['swing'] < 15 else 25 if candidate_swing_data[0]['swing'] < 25 else 50
 
-            swig_info = {
+            swing_info = {
                 'status': True,
                 'text': f"{candidate_swing_data[0]['swing']}% swing to {party_names(candidate_swing_data[0]['party_long'])}",
                 'label': label,
@@ -166,19 +191,12 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
         'heldBy': result['incumbent'].lower(),
         'heldByName': parties[result['incumbent'].lower()]['partyName'],
         'percentageCounted': round((aec_result['votesCounted'] / aec_result['enrollment']) * 100, 1),
-        'swigInfo': swig_info
+        'swigInfo': swing_info
     }
 
     return info
 
-def get_json(feed_url: str) -> Dict:
-    response = requests.get(feed_url)
-    return response.json()
 
-def get_latest_feed(latest: List[str]) -> int:
-    if not latest:
-        raise ValueError("getLatestFeed expects a non-empty array")
-    return max(map(int, latest))
 
 def create_table(data: List[Dict], party_map: List[Dict], swing: bool) -> List[Dict]:
     # Build party map lookup
@@ -207,8 +225,10 @@ def create_table(data: List[Dict], party_map: List[Dict], swing: bool) -> List[D
         'Total votes': sum(item['Total votes'] for item in coalition_items)
     }
     
+    # This uses the Coalition's combined primary vote ( NOT their 2pp and needs to be updated for new elections)
+
     if swing:
-        coalition_summary['Swing'] = coalition_summary['Votes (%)'] - 41.44
+        coalition_summary['Swing'] = coalition_summary['Votes (%)'] - coalition_old_primary
 
     others = [
         "Australian Labor Party", "The Greens", "Independent",
@@ -255,28 +275,14 @@ def create_ticker_feed(data: Dict) -> List[Dict]:
 
     for item in predictions:
         if item['timestamp']:
-            item['unix'] = int(datetime.fromisoformat(item['timestamp']).timestamp())
+            # '05-31-2022 07:09:33'
+            item['unix'] = int(datetime.strptime(item['timestamp'], "%m-%d-%Y %H:%M:%S").timestamp())
             with_timestamp.append(item)
         else:
             without_timestamp.append(item)
 
     with_timestamp.sort(key=lambda x: x['unix'], reverse=True)
     return (with_timestamp + without_timestamp)[:15]
-
-def upload_to_s3(dest: str, buffer: bytes, content_type: str = 'application/json'):
-    s3 = boto3.client('s3')
-    try:
-        s3.put_object(
-            Bucket="gdn-cdn",
-            Key=dest,
-            Body=buffer,
-            ContentType=content_type,
-            ACL='public-read',
-            CacheControl="max-age=30"
-        )
-        print(f"https://interactive.guim.co.uk/{dest}")
-    except Exception as err:
-        print(f"Error: {err}")
 
 def senate_render(data: Dict) -> Dict:
     # Set up constants
@@ -394,22 +400,24 @@ def senate_render(data: Dict) -> Dict:
 
 def main():
     # Fetch Google doc data
-    googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
     
-    # Get latest feed data
-    latest = get_json(f"{url}/recentResults.json")
+    googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
+    print(f"Latest googledoc: https://interactive.guim.co.uk/docsdata/{googledoc_key}.json")
+
+    # Get latest feed data from the local file
+    latest = get_local_json("recentResults.json")
+
+    # Most recent timestamp from list
     latest_feed = get_latest_feed(latest)
-    latest_data = get_json(f"{url}/{latest_feed}.json")
+
+    # Most recent results file
+    latest_data = get_local_json(f"results/{latest_feed}.json")
     
     # Get summary results
-    summary_results = get_json("https://interactive.guim.co.uk/2022/05/aus-election/results-data/summaryResults.json")
-    
-    print(f"Latest feed: {url}/{latest_feed}.json")
-    print(f"Latest googledoc: https://interactive.guim.co.uk/docsdata/{googledoc_key}.json")
+    summary_results = get_local_json("summaryResults.json")
     
     # Get swing data
-    swing = get_json(f"{url}/{latest_feed}-swing.json")
-    print(f"Latest swing: {url}/{latest_feed}-swing.json")
+    swing = get_local_json(f"results/{latest_feed}-swing.json")
     
     # Create data maps
     electorates_map = {item['electorate']: item for item in googledoc['electorates']}
@@ -425,24 +433,29 @@ def main():
     print(latest_data['nationalSwing'])
     
     # Process electorates
+
     electorates_data = googledoc['electorates']
-    for item in electorates_data:
-        info = select_electorate(item['id'], item['electorate'], electorates_map, divisions, swing, parties)
-        if info.get('twoParty'):
-            item['byMargin'] = info['twoParty'][0]['swing']
-        
-        electorate_info = json.dumps(info).encode()
-        upload_to_s3(f"{config['path']}/electorates/{item['id']}.json", electorate_info)
+
+    if uploadElectorates:
+        for item in electorates_data:
+            info = select_electorate(item['id'], item['electorate'], electorates_map, divisions, swing, parties)
+            if info.get('twoParty'):
+                item['byMargin'] = info['twoParty'][0]['swing']
+            
+            electorate_info = json.dumps(info).encode()
+            upload_to_s3(f"{config['path']}/electorates/{item['id']}.json", electorate_info)
     
     # Upload electorates data
     electorates_data_buffer = json.dumps(electorates_data).encode()
     upload_to_s3(f"{config['path']}/electorates.json", electorates_data_buffer)
+    save_to_file("results/electorates.json", electorates_data_buffer)
     
     # Process and upload firewire data
-    firewire = compile(googledoc['electorates'], parties, summary_results, latest_data['nationalSwing'])
+    firewire = compile(googledoc['electorates'], googledoc['options'], parties, summary_results, latest_data['nationalSwing'])
     firewire_data_buffer = json.dumps(firewire).encode()
     upload_to_s3(f"{config['path']}/firewire.json", firewire_data_buffer)
-    
+    save_to_file("results/firewire.json", firewire_data_buffer)    
+
     # Process senate data
     senate_data = senate_render(googledoc)
     
@@ -457,16 +470,20 @@ def main():
     
     feed_data_buffer = json.dumps(feed).encode()
     upload_to_s3(f"{config['path']}/feed.json", feed_data_buffer)
-    
+    save_to_file("results/feed.json", feed_data_buffer)    
+
     # Upload last updated timestamp
     last_updated_buffer = json.dumps({'updated': updated}).encode()
     upload_to_s3(f"{config['path']}/lastUpdated.json", last_updated_buffer)
-    
+    save_to_file("results/lastUpdated.json", last_updated_buffer)    
+
     # Upload swing data
     swing_feed_buffer = json.dumps(swing).encode()
     upload_to_s3(f"{config['path']}/swing.json", swing_feed_buffer)
+    save_to_file("results/swing.json", swing_feed_buffer)    
     
-    print("Cheque please")
+    timeRun = datetime.now() - startTime
+    print(f"Finished in {timeRun}")
 
 if __name__ == "__main__":
     main() 

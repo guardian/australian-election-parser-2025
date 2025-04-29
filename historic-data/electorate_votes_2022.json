@@ -1,0 +1,606 @@
+{
+  "Canberra": {
+    "Indie_and_Minor": 30785,
+    "Major": 61537
+  },
+  "Fenner": {
+    "Indie_and_Minor": 21765,
+    "Major": 69516
+  },
+  "Bean": {
+    "Indie_and_Minor": 28093,
+    "Major": 70301
+  },
+  "Banks": {
+    "Indie_and_Minor": 17964,
+    "Major": 74081
+  },
+  "Barton": {
+    "Indie_and_Minor": 21425,
+    "Major": 70198
+  },
+  "Bennelong": {
+    "Indie_and_Minor": 20846,
+    "Major": 78802
+  },
+  "Berowra": {
+    "Indie_and_Minor": 26763,
+    "Major": 66543
+  },
+  "Blaxland": {
+    "Indie_and_Minor": 14713,
+    "Major": 66964
+  },
+  "Bradfield": {
+    "Indie_and_Minor": 36240,
+    "Major": 60464
+  },
+  "Calare": {
+    "Indie_and_Minor": 39906,
+    "Major": 67413
+  },
+  "Chifley": {
+    "Indie_and_Minor": 21907,
+    "Major": 75282
+  },
+  "Cook": {
+    "Indie_and_Minor": 19051,
+    "Major": 78766
+  },
+  "Cowper": {
+    "Indie_and_Minor": 51761,
+    "Major": 59475
+  },
+  "Cunningham": {
+    "Indie_and_Minor": 35470,
+    "Major": 66201
+  },
+  "Dobell": {
+    "Indie_and_Minor": 23846,
+    "Major": 77871
+  },
+  "Eden-Monaro": {
+    "Indie_and_Minor": 24782,
+    "Major": 76735
+  },
+  "Farrer": {
+    "Indie_and_Minor": 28919,
+    "Major": 71663
+  },
+  "Fowler": {
+    "Indie_and_Minor": 40190,
+    "Major": 45713
+  },
+  "Gilmore": {
+    "Indie_and_Minor": 24589,
+    "Major": 87116
+  },
+  "Grayndler": {
+    "Indie_and_Minor": 28739,
+    "Major": 65834
+  },
+  "Greenway": {
+    "Indie_and_Minor": 22056,
+    "Major": 78483
+  },
+  "Hughes": {
+    "Indie_and_Minor": 32933,
+    "Major": 63976
+  },
+  "Hume": {
+    "Indie_and_Minor": 38721,
+    "Major": 66041
+  },
+  "Hunter": {
+    "Indie_and_Minor": 36673,
+    "Major": 71054
+  },
+  "Kingsford Smith": {
+    "Indie_and_Minor": 22840,
+    "Major": 74626
+  },
+  "Lindsay": {
+    "Indie_and_Minor": 22581,
+    "Major": 82145
+  },
+  "Lyne": {
+    "Indie_and_Minor": 37563,
+    "Major": 69685
+  },
+  "Macarthur": {
+    "Indie_and_Minor": 26259,
+    "Major": 84868
+  },
+  "Mackellar": {
+    "Indie_and_Minor": 49836,
+    "Major": 49155
+  },
+  "Macquarie": {
+    "Indie_and_Minor": 21447,
+    "Major": 74005
+  },
+  "Mitchell": {
+    "Indie_and_Minor": 23678,
+    "Major": 84515
+  },
+  "New England": {
+    "Indie_and_Minor": 28180,
+    "Major": 69092
+  },
+  "Newcastle": {
+    "Indie_and_Minor": 33260,
+    "Major": 72367
+  },
+  "North Sydney": {
+    "Indie_and_Minor": 39327,
+    "Major": 57791
+  },
+  "Page": {
+    "Indie_and_Minor": 37337,
+    "Major": 67232
+  },
+  "Parkes": {
+    "Indie_and_Minor": 27140,
+    "Major": 61940
+  },
+  "Parramatta": {
+    "Indie_and_Minor": 20515,
+    "Major": 63750
+  },
+  "Reid": {
+    "Indie_and_Minor": 20082,
+    "Major": 77894
+  },
+  "Richmond": {
+    "Indie_and_Minor": 47752,
+    "Major": 52032
+  },
+  "Robertson": {
+    "Indie_and_Minor": 21531,
+    "Major": 74679
+  },
+  "Shortland": {
+    "Indie_and_Minor": 27949,
+    "Major": 72350
+  },
+  "Sydney": {
+    "Indie_and_Minor": 30439,
+    "Major": 72686
+  },
+  "Whitlam": {
+    "Indie_and_Minor": 29270,
+    "Major": 80067
+  },
+  "Warringah": {
+    "Indie_and_Minor": 54399,
+    "Major": 38935
+  },
+  "Wentworth": {
+    "Indie_and_Minor": 43274,
+    "Major": 45649
+  },
+  "Werriwa": {
+    "Indie_and_Minor": 29659,
+    "Major": 70972
+  },
+  "Paterson": {
+    "Indie_and_Minor": 26018,
+    "Major": 88867
+  },
+  "Riverina": {
+    "Indie_and_Minor": 32520,
+    "Major": 66144
+  },
+  "Watson": {
+    "Indie_and_Minor": 18504,
+    "Major": 67223
+  },
+  "McMahon": {
+    "Indie_and_Minor": 20079,
+    "Major": 64663
+  },
+  "Lingiari": {
+    "Indie_and_Minor": 13172,
+    "Major": 32640
+  },
+  "Solomon": {
+    "Indie_and_Minor": 19579,
+    "Major": 35546
+  },
+  "Bowman": {
+    "Indie_and_Minor": 28910,
+    "Major": 72782
+  },
+  "Brisbane": {
+    "Indie_and_Minor": 38114,
+    "Major": 70684
+  },
+  "Capricornia": {
+    "Indie_and_Minor": 29349,
+    "Major": 60943
+  },
+  "Dawson": {
+    "Indie_and_Minor": 29814,
+    "Major": 62759
+  },
+  "Fadden": {
+    "Indie_and_Minor": 34943,
+    "Major": 70828
+  },
+  "Fairfax": {
+    "Indie_and_Minor": 34446,
+    "Major": 69213
+  },
+  "Fisher": {
+    "Indie_and_Minor": 35168,
+    "Major": 73326
+  },
+  "Forde": {
+    "Indie_and_Minor": 33195,
+    "Major": 61417
+  },
+  "Griffith": {
+    "Indie_and_Minor": 42856,
+    "Major": 63454
+  },
+  "Groom": {
+    "Indie_and_Minor": 36048,
+    "Major": 59956
+  },
+  "Herbert": {
+    "Indie_and_Minor": 29016,
+    "Major": 63424
+  },
+  "Hinkler": {
+    "Indie_and_Minor": 35052,
+    "Major": 66354
+  },
+  "Kennedy": {
+    "Indie_and_Minor": 52184,
+    "Major": 41420
+  },
+  "Leichhardt": {
+    "Indie_and_Minor": 32743,
+    "Major": 58964
+  },
+  "Lilley": {
+    "Indie_and_Minor": 28053,
+    "Major": 70954
+  },
+  "Maranoa": {
+    "Indie_and_Minor": 26497,
+    "Major": 66618
+  },
+  "McPherson": {
+    "Indie_and_Minor": 33441,
+    "Major": 63642
+  },
+  "Moncrieff": {
+    "Indie_and_Minor": 32644,
+    "Major": 65534
+  },
+  "Moreton": {
+    "Indie_and_Minor": 27146,
+    "Major": 65410
+  },
+  "Oxley": {
+    "Indie_and_Minor": 24242,
+    "Major": 71170
+  },
+  "Petrie": {
+    "Indie_and_Minor": 28216,
+    "Major": 78297
+  },
+  "Rankin": {
+    "Indie_and_Minor": 23748,
+    "Major": 64074
+  },
+  "Ryan": {
+    "Indie_and_Minor": 38931,
+    "Major": 60385
+  },
+  "Wide Bay": {
+    "Indie_and_Minor": 33757,
+    "Major": 61946
+  },
+  "Dickson": {
+    "Indie_and_Minor": 25976,
+    "Major": 73053
+  },
+  "Longman": {
+    "Indie_and_Minor": 32776,
+    "Major": 75289
+  },
+  "Blair": {
+    "Indie_and_Minor": 37631,
+    "Major": 66616
+  },
+  "Bonner": {
+    "Indie_and_Minor": 24692,
+    "Major": 71682
+  },
+  "Flynn": {
+    "Indie_and_Minor": 27317,
+    "Major": 64994
+  },
+  "Wright": {
+    "Indie_and_Minor": 37537,
+    "Major": 68396
+  },
+  "Adelaide": {
+    "Indie_and_Minor": 31598,
+    "Major": 81166
+  },
+  "Barker": {
+    "Indie_and_Minor": 24884,
+    "Major": 80915
+  },
+  "Boothby": {
+    "Indie_and_Minor": 33765,
+    "Major": 79942
+  },
+  "Grey": {
+    "Indie_and_Minor": 34320,
+    "Major": 68798
+  },
+  "Hindmarsh": {
+    "Indie_and_Minor": 27724,
+    "Major": 82619
+  },
+  "Kingston": {
+    "Indie_and_Minor": 27279,
+    "Major": 82083
+  },
+  "Makin": {
+    "Indie_and_Minor": 23959,
+    "Major": 83683
+  },
+  "Mayo": {
+    "Indie_and_Minor": 63752,
+    "Major": 52462
+  },
+  "Sturt": {
+    "Indie_and_Minor": 29503,
+    "Major": 83107
+  },
+  "Spence": {
+    "Indie_and_Minor": 32478,
+    "Major": 73749
+  },
+  "Bass": {
+    "Indie_and_Minor": 21722,
+    "Major": 46887
+  },
+  "Braddon": {
+    "Indie_and_Minor": 23570,
+    "Major": 47028
+  },
+  "Franklin": {
+    "Indie_and_Minor": 26064,
+    "Major": 45195
+  },
+  "Lyons": {
+    "Indie_and_Minor": 24747,
+    "Major": 48591
+  },
+  "Clark": {
+    "Indie_and_Minor": 43089,
+    "Major": 22805
+  },
+  "Aston": {
+    "Indie_and_Minor": 23951,
+    "Major": 74209
+  },
+  "Ballarat": {
+    "Indie_and_Minor": 27187,
+    "Major": 69313
+  },
+  "Bendigo": {
+    "Indie_and_Minor": 30320,
+    "Major": 69459
+  },
+  "Bruce": {
+    "Indie_and_Minor": 26937,
+    "Major": 68353
+  },
+  "Calwell": {
+    "Indie_and_Minor": 26757,
+    "Major": 58238
+  },
+  "Casey": {
+    "Indie_and_Minor": 38495,
+    "Major": 61126
+  },
+  "Chisholm": {
+    "Indie_and_Minor": 22788,
+    "Major": 73730
+  },
+  "Corio": {
+    "Indie_and_Minor": 32276,
+    "Major": 64668
+  },
+  "Deakin": {
+    "Indie_and_Minor": 25799,
+    "Major": 74470
+  },
+  "Dunkley": {
+    "Indie_and_Minor": 26108,
+    "Major": 69614
+  },
+  "Flinders": {
+    "Indie_and_Minor": 34402,
+    "Major": 64500
+  },
+  "Gellibrand": {
+    "Indie_and_Minor": 27946,
+    "Major": 64251
+  },
+  "Gippsland": {
+    "Indie_and_Minor": 26867,
+    "Major": 74039
+  },
+  "Goldstein": {
+    "Indie_and_Minor": 47681,
+    "Major": 50406
+  },
+  "Higgins": {
+    "Indie_and_Minor": 29465,
+    "Major": 66046
+  },
+  "Holt": {
+    "Indie_and_Minor": 26296,
+    "Major": 62600
+  },
+  "Hotham": {
+    "Indie_and_Minor": 27794,
+    "Major": 72408
+  },
+  "Indi": {
+    "Indie_and_Minor": 57992,
+    "Major": 43572
+  },
+  "Isaacs": {
+    "Indie_and_Minor": 27650,
+    "Major": 70534
+  },
+  "Jagajaga": {
+    "Indie_and_Minor": 30296,
+    "Major": 70947
+  },
+  "Kooyong": {
+    "Indie_and_Minor": 51690,
+    "Major": 50827
+  },
+  "Lalor": {
+    "Indie_and_Minor": 27392,
+    "Major": 61130
+  },
+  "La Trobe": {
+    "Indie_and_Minor": 25968,
+    "Major": 65704
+  },
+  "Mallee": {
+    "Indie_and_Minor": 34909,
+    "Major": 67320
+  },
+  "Maribyrnong": {
+    "Indie_and_Minor": 28683,
+    "Major": 65285
+  },
+  "McEwen": {
+    "Indie_and_Minor": 28685,
+    "Major": 67034
+  },
+  "Melbourne": {
+    "Indie_and_Minor": 57691,
+    "Major": 38815
+  },
+  "Menzies": {
+    "Indie_and_Minor": 24858,
+    "Major": 76161
+  },
+  "Scullin": {
+    "Indie_and_Minor": 29195,
+    "Major": 61927
+  },
+  "Wannon": {
+    "Indie_and_Minor": 36850,
+    "Major": 64251
+  },
+  "Wills": {
+    "Indie_and_Minor": 39978,
+    "Major": 51220
+  },
+  "Gorton": {
+    "Indie_and_Minor": 28906,
+    "Major": 63528
+  },
+  "Cooper": {
+    "Indie_and_Minor": 39667,
+    "Major": 54083
+  },
+  "Fraser": {
+    "Indie_and_Minor": 30639,
+    "Major": 61462
+  },
+  "Macnamara": {
+    "Indie_and_Minor": 36503,
+    "Major": 56528
+  },
+  "Monash": {
+    "Indie_and_Minor": 35407,
+    "Major": 61305
+  },
+  "Nicholls": {
+    "Indie_and_Minor": 42148,
+    "Major": 53043
+  },
+  "Hawke": {
+    "Indie_and_Minor": 32204,
+    "Major": 54980
+  },
+  "Corangamite": {
+    "Indie_and_Minor": 27931,
+    "Major": 73036
+  },
+  "Brand": {
+    "Indie_and_Minor": 26594,
+    "Major": 69087
+  },
+  "Canning": {
+    "Indie_and_Minor": 22073,
+    "Major": 72191
+  },
+  "Cowan": {
+    "Indie_and_Minor": 22644,
+    "Major": 77040
+  },
+  "Curtin": {
+    "Indie_and_Minor": 46975,
+    "Major": 58062
+  },
+  "Forrest": {
+    "Indie_and_Minor": 27992,
+    "Major": 67098
+  },
+  "Fremantle": {
+    "Indie_and_Minor": 31193,
+    "Major": 66860
+  },
+  "Moore": {
+    "Indie_and_Minor": 26598,
+    "Major": 77933
+  },
+  "O'Connor": {
+    "Indie_and_Minor": 27669,
+    "Major": 69049
+  },
+  "Pearce": {
+    "Indie_and_Minor": 25940,
+    "Major": 68976
+  },
+  "Perth": {
+    "Indie_and_Minor": 34721,
+    "Major": 67360
+  },
+  "Swan": {
+    "Indie_and_Minor": 28858,
+    "Major": 71178
+  },
+  "Tangney": {
+    "Indie_and_Minor": 23600,
+    "Major": 83948
+  },
+  "Hasluck": {
+    "Indie_and_Minor": 26480,
+    "Major": 72033
+  },
+  "Durack": {
+    "Indie_and_Minor": 23534,
+    "Major": 65989
+  },
+  "Burt": {
+    "Indie_and_Minor": 23273,
+    "Major": 68277
+  }
+}

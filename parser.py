@@ -32,7 +32,7 @@ if ftpPath != 'mediafeed.aec.gov.au':
 verbose = False
 
 # Loops through old election data to simulate results night
-resultsTest = True
+resultsTest = False
 
 if resultsTest:
 	print("WARNING: RUNNING A TEST USING OLD RESULTS")

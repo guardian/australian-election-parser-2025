@@ -299,6 +299,7 @@ function createTable(data, partyMap, swing) {
 
   // Build a summary object for the coalition.
   // (Subtract 41.44 from the swing if needed.)
+  // CHECK THIS?
   const coalitionSummary = {
     Party: "Coalition",
     "Votes (%)": sum(coalitionItems, "Votes (%)"),
@@ -601,9 +602,13 @@ async function createSwingFeed(swingData, electorates) {
 
   // https://interactive.guim.co.uk/docsdata/11WneZFp0CwnkDiBtQTTH_y-OjSzAlZR4c6rCPrQ_baA.json
 
+  // Gets the manually updated seat results
+
   const json = await fetch(`https://interactive.guim.co.uk/docsdata/${googledocKey}.json`).then(res => res.json());
 
   const googledoc = json.sheets
+
+  // Checks for the latest timestamp
 
   const latest = await getJson(`${url}/recentResults.json`)
 
