@@ -1,3 +1,7 @@
+from typing import Dict, List
+import requests
+import json
+
 # Gets a json file from a url
 
 def get_json(feed_url: str) -> Dict:
@@ -22,21 +26,19 @@ def get_latest_feed(latest: List[str]) -> int:
 import boto3
 
 def upload_to_s3(dest: str, buffer: bytes, content_type: str = 'application/json'):
-
-    if upload:
-        s3 = boto3.client('s3')
-        try:
-            s3.put_object(
-                Bucket="gdn-cdn",
-                Key=dest,
-                Body=buffer,
-                ContentType=content_type,
-                ACL='public-read',
-                CacheControl="max-age=30"
-            )
-            print(f"https://interactive.guim.co.uk/{dest}")
-        except Exception as err:
-            print(f"Error: {err}")
+    s3 = boto3.client('s3')
+    try:
+        s3.put_object(
+            Bucket="gdn-cdn",
+            Key=dest,
+            Body=buffer,
+            ContentType=content_type,
+            ACL='public-read',
+            CacheControl="max-age=30"
+        )
+        print(f"https://interactive.guim.co.uk/{dest}")
+    except Exception as err:
+        print(f"Error: {err}")
 
 # Saves a file locally
 

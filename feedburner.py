@@ -1,6 +1,5 @@
-
-import json
 import requests
+import json
 from datetime import datetime
 from typing import Dict, List, Optional, Union
 import math
@@ -447,13 +446,15 @@ def main():
     
     # Upload electorates data
     electorates_data_buffer = json.dumps(electorates_data).encode()
-    upload_to_s3(f"{config['path']}/electorates.json", electorates_data_buffer)
+    if upload:
+        upload_to_s3(f"{config['path']}/electorates.json", electorates_data_buffer)
     save_to_file("results/electorates.json", electorates_data_buffer)
     
     # Process and upload firewire data
     firewire = compile(googledoc['electorates'], googledoc['options'], parties, summary_results, latest_data['nationalSwing'])
     firewire_data_buffer = json.dumps(firewire).encode()
-    upload_to_s3(f"{config['path']}/firewire.json", firewire_data_buffer)
+    if upload:
+        upload_to_s3(f"{config['path']}/firewire.json", firewire_data_buffer)
     save_to_file("results/firewire.json", firewire_data_buffer)    
 
     # Process senate data
@@ -469,17 +470,20 @@ def main():
     }
     
     feed_data_buffer = json.dumps(feed).encode()
-    upload_to_s3(f"{config['path']}/feed.json", feed_data_buffer)
+    if upload:
+        upload_to_s3(f"{config['path']}/feed.json", feed_data_buffer)
     save_to_file("results/feed.json", feed_data_buffer)    
 
     # Upload last updated timestamp
     last_updated_buffer = json.dumps({'updated': updated}).encode()
-    upload_to_s3(f"{config['path']}/lastUpdated.json", last_updated_buffer)
+    if upload:
+        upload_to_s3(f"{config['path']}/lastUpdated.json", last_updated_buffer)
     save_to_file("results/lastUpdated.json", last_updated_buffer)    
 
     # Upload swing data
     swing_feed_buffer = json.dumps(swing).encode()
-    upload_to_s3(f"{config['path']}/swing.json", swing_feed_buffer)
+    if upload:
+        upload_to_s3(f"{config['path']}/swing.json", swing_feed_buffer)
     save_to_file("results/swing.json", swing_feed_buffer)    
     
     timeRun = datetime.now() - startTime
