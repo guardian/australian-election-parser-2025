@@ -1,5 +1,5 @@
 import os
-import simplejson as json
+import json
 from datetime import datetime
 import boto3
 
