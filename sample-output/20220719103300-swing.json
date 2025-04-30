@@ -1,0 +1,4381 @@
+[
+    {
+        "id": 318,
+        "name": "Bean",
+        "state": "ACT",
+        "tcp": [
+            {
+                "candidate_id": 36231,
+                "candidate_name": "SMITH, David",
+                "votesTotal": 61935,
+                "votesPercent": 62.95,
+                "swing": 5.43,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37198,
+                "candidate_name": "HIATT, Jane",
+                "votesTotal": 36459,
+                "votesPercent": 37.05,
+                "swing": -5.43,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -5.43,
+        "tppLabor": 5.43,
+        "toMajor": 1.87,
+        "toMinor": -1.87
+    },
+    {
+        "id": 101,
+        "name": "Canberra",
+        "state": "ACT",
+        "tcp": [
+            {
+                "candidate_id": 36241,
+                "candidate_name": "HOLLO, Tim",
+                "votesTotal": 34901,
+                "votesPercent": 37.8,
+                "swing": 37.8,
+                "party_short": "GRN",
+                "party_long": "The Greens"
+            },
+            {
+                "candidate_id": 36228,
+                "candidate_name": "PAYNE, Alicia",
+                "votesTotal": 57421,
+                "votesPercent": 62.2,
+                "swing": 62.2,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -5.38,
+        "tppLabor": 5.38,
+        "toMajor": -1.69,
+        "toMinor": 1.69
+    },
+    {
+        "id": 102,
+        "name": "Fenner",
+        "state": "ACT",
+        "tcp": [
+            {
+                "candidate_id": 36234,
+                "candidate_name": "LEIGH, Andrew",
+                "votesTotal": 59966,
+                "votesPercent": 65.69,
+                "swing": 5.13,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37203,
+                "candidate_name": "KUSTER, Nathan",
+                "votesTotal": 31315,
+                "votesPercent": 34.31,
+                "swing": -5.13,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -5.13,
+        "tppLabor": 5.13,
+        "toMajor": -3.36,
+        "toMinor": 3.36
+    },
+    {
+        "id": 103,
+        "name": "Banks",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37018,
+                "candidate_name": "COLEMAN, David",
+                "votesTotal": 48969,
+                "votesPercent": 53.2,
+                "swing": -3.06,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36774,
+                "candidate_name": "SOON, Zhi",
+                "votesTotal": 43076,
+                "votesPercent": 46.8,
+                "swing": 3.06,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -3.06,
+        "tppLabor": 3.06,
+        "toMajor": -6.78,
+        "toMinor": 6.78
+    },
+    {
+        "id": 104,
+        "name": "Barton",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36820,
+                "candidate_name": "BURNEY, Linda",
+                "votesTotal": 60054,
+                "votesPercent": 65.54,
+                "swing": 6.13,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37017,
+                "candidate_name": "GOODY, John",
+                "votesTotal": 31569,
+                "votesPercent": 34.46,
+                "swing": -6.13,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.13,
+        "tppLabor": 6.13,
+        "toMajor": -6.06,
+        "toMinor": 6.06
+    },
+    {
+        "id": 105,
+        "name": "Bennelong",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37019,
+                "candidate_name": "KENNEDY, Simon",
+                "votesTotal": 48847,
+                "votesPercent": 49.02,
+                "swing": -7.89,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36827,
+                "candidate_name": "LAXALE, Jerome",
+                "votesTotal": 50801,
+                "votesPercent": 50.98,
+                "swing": 7.89,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -7.89,
+        "tppLabor": 7.89,
+        "toMajor": -5.77,
+        "toMinor": 5.77
+    },
+    {
+        "id": 106,
+        "name": "Berowra",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37028,
+                "candidate_name": "LEESER, Julian",
+                "votesTotal": 55771,
+                "votesPercent": 59.77,
+                "swing": -5.88,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36830,
+                "candidate_name": "KOSCHINSKI, Benson",
+                "votesTotal": 37535,
+                "votesPercent": 40.23,
+                "swing": 5.88,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -5.88,
+        "tppLabor": 5.88,
+        "toMajor": -6.98,
+        "toMinor": 6.98
+    },
+    {
+        "id": 107,
+        "name": "Blaxland",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37038,
+                "candidate_name": "GUNEY, Oz",
+                "votesTotal": 28638,
+                "votesPercent": 35.06,
+                "swing": -0.22,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36823,
+                "candidate_name": "CLARE, Jason",
+                "votesTotal": 53039,
+                "votesPercent": 64.94,
+                "swing": 0.22,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -0.22,
+        "tppLabor": 0.22,
+        "toMajor": -4.61,
+        "toMinor": 4.61
+    },
+    {
+        "id": 108,
+        "name": "Bradfield",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36047,
+                "candidate_name": "BOELE, Nicolette",
+                "votesTotal": 44257,
+                "votesPercent": 45.77,
+                "swing": 45.77,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 37016,
+                "candidate_name": "FLETCHER, Paul",
+                "votesTotal": 52447,
+                "votesPercent": 54.23,
+                "swing": 54.23,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -10.01,
+        "tppLabor": 10.01,
+        "toMajor": -18.99,
+        "toMinor": 18.99
+    },
+    {
+        "id": 109,
+        "name": "Calare",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 35951,
+                "candidate_name": "HOOK, Kate",
+                "votesTotal": 43272,
+                "votesPercent": 40.32,
+                "swing": 40.32,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 36348,
+                "candidate_name": "GEE, Andrew",
+                "votesTotal": 64047,
+                "votesPercent": 59.68,
+                "swing": 59.68,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            }
+        ],
+        "tppCoalition": 2.16,
+        "tppLabor": -2.16,
+        "toMajor": -4.02,
+        "toMinor": 4.02
+    },
+    {
+        "id": 111,
+        "name": "Chifley",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37045,
+                "candidate_name": "SINGH, Jugandeep",
+                "votesTotal": 35507,
+                "votesPercent": 36.53,
+                "swing": -1.1,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36788,
+                "candidate_name": "HUSIC, Ed",
+                "votesTotal": 61682,
+                "votesPercent": 63.47,
+                "swing": 1.1,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.1,
+        "tppLabor": 1.1,
+        "toMajor": -4.76,
+        "toMinor": 4.76
+    },
+    {
+        "id": 112,
+        "name": "Cook",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37025,
+                "candidate_name": "MORRISON, Scott",
+                "votesTotal": 61080,
+                "votesPercent": 62.44,
+                "swing": -6.58,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36784,
+                "candidate_name": "EARLE, Simon",
+                "votesTotal": 36737,
+                "votesPercent": 37.56,
+                "swing": 6.58,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -6.58,
+        "tppLabor": 6.58,
+        "toMajor": -6.28,
+        "toMinor": 6.28
+    },
+    {
+        "id": 113,
+        "name": "Cowper",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36342,
+                "candidate_name": "CONAGHAN, Pat",
+                "votesTotal": 58204,
+                "votesPercent": 52.32,
+                "swing": 52.32,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36245,
+                "candidate_name": "HEISE, Caz",
+                "votesTotal": 53032,
+                "votesPercent": 47.68,
+                "swing": 47.68,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -2.41,
+        "tppLabor": 2.41,
+        "toMajor": -7.39,
+        "toMinor": 7.39
+    },
+    {
+        "id": 114,
+        "name": "Cunningham",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37020,
+                "candidate_name": "UREN, Marcus",
+                "votesTotal": 35888,
+                "votesPercent": 35.3,
+                "swing": -1.29,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36778,
+                "candidate_name": "BYRNES, Alison",
+                "votesTotal": 65783,
+                "votesPercent": 64.7,
+                "swing": 1.29,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.29,
+        "tppLabor": 1.29,
+        "toMajor": -12.46,
+        "toMinor": 12.46
+    },
+    {
+        "id": 115,
+        "name": "Dobell",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37015,
+                "candidate_name": "FENELEY, Michael",
+                "votesTotal": 44226,
+                "votesPercent": 43.48,
+                "swing": -5.02,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36779,
+                "candidate_name": "McBRIDE, Emma",
+                "votesTotal": 57491,
+                "votesPercent": 56.52,
+                "swing": 5.02,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -5.02,
+        "tppLabor": 5.02,
+        "toMajor": -5.67,
+        "toMinor": 5.67
+    },
+    {
+        "id": 117,
+        "name": "Eden-Monaro",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36803,
+                "candidate_name": "McBAIN, Kristy",
+                "votesTotal": 59083,
+                "votesPercent": 58.2,
+                "swing": 7.35,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37193,
+                "candidate_name": "NOCKLES, Jerry",
+                "votesTotal": 42434,
+                "votesPercent": 41.8,
+                "swing": -7.35,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -7.35,
+        "tppLabor": 7.35,
+        "toMajor": -7.54,
+        "toMinor": 7.54
+    },
+    {
+        "id": 118,
+        "name": "Farrer",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37032,
+                "candidate_name": "LEY, Sussan",
+                "votesTotal": 66739,
+                "votesPercent": 66.35,
+                "swing": -3.48,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36789,
+                "candidate_name": "CAMERON, Darren Michael",
+                "votesTotal": 33843,
+                "votesPercent": 33.65,
+                "swing": 3.48,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -3.48,
+        "tppLabor": 3.48,
+        "toMajor": 5.9,
+        "toMinor": -5.9
+    },
+    {
+        "id": 119,
+        "name": "Fowler",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36907,
+                "candidate_name": "KENEALLY, Kristina",
+                "votesTotal": 41555,
+                "votesPercent": 48.37,
+                "swing": 48.37,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36240,
+                "candidate_name": "LE, Dai",
+                "votesTotal": 44348,
+                "votesPercent": 51.63,
+                "swing": 51.63,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": 8.27,
+        "tppLabor": -8.27,
+        "toMajor": -31.37,
+        "toMinor": 31.37
+    },
+    {
+        "id": 120,
+        "name": "Gilmore",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37023,
+                "candidate_name": "CONSTANCE, Andrew",
+                "votesTotal": 55666,
+                "votesPercent": 49.83,
+                "swing": 2.44,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36776,
+                "candidate_name": "PHILLIPS, Fiona",
+                "votesTotal": 56039,
+                "votesPercent": 50.17,
+                "swing": -2.44,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": 2.44,
+        "tppLabor": -2.44,
+        "toMajor": 0.11,
+        "toMinor": -0.11
+    },
+    {
+        "id": 121,
+        "name": "Grayndler",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36782,
+                "candidate_name": "ALBANESE, Anthony",
+                "votesTotal": 63413,
+                "votesPercent": 67.05,
+                "swing": 0.75,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36317,
+                "candidate_name": "JACOBS, Rachael",
+                "votesTotal": 31160,
+                "votesPercent": 32.95,
+                "swing": -0.75,
+                "party_short": "GRN",
+                "party_long": "The Greens"
+            }
+        ],
+        "tppCoalition": -5.02,
+        "tppLabor": 5.02,
+        "toMajor": -3.0,
+        "toMinor": 3.0
+    },
+    {
+        "id": 122,
+        "name": "Greenway",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36787,
+                "candidate_name": "ROWLAND, Michelle",
+                "votesTotal": 61864,
+                "votesPercent": 61.53,
+                "swing": 8.73,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37042,
+                "candidate_name": "PATHI, Pradeep",
+                "votesTotal": 38675,
+                "votesPercent": 38.47,
+                "swing": -8.73,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -8.73,
+        "tppLabor": 8.73,
+        "toMajor": -8.49,
+        "toMinor": 8.49
+    },
+    {
+        "id": 124,
+        "name": "Hughes",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37190,
+                "candidate_name": "WARE, Jenny",
+                "votesTotal": 55244,
+                "votesPercent": 57.01,
+                "swing": -2.84,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36790,
+                "candidate_name": "CAMPBELL, Riley",
+                "votesTotal": 41665,
+                "votesPercent": 42.99,
+                "swing": 2.84,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -2.84,
+        "tppLabor": 2.84,
+        "toMajor": -17.6,
+        "toMinor": 17.6
+    },
+    {
+        "id": 125,
+        "name": "Hume",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36785,
+                "candidate_name": "BAINES, Greg",
+                "votesTotal": 44295,
+                "votesPercent": 42.28,
+                "swing": 5.27,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37034,
+                "candidate_name": "TAYLOR, Angus",
+                "votesTotal": 60467,
+                "votesPercent": 57.72,
+                "swing": -5.27,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -5.27,
+        "tppLabor": 5.27,
+        "toMajor": -16.82,
+        "toMinor": 16.82
+    },
+    {
+        "id": 126,
+        "name": "Hunter",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36792,
+                "candidate_name": "REPACHOLI, Dan",
+                "votesTotal": 58200,
+                "votesPercent": 54.03,
+                "swing": 1.05,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36296,
+                "candidate_name": "THOMSON, James",
+                "votesTotal": 49527,
+                "votesPercent": 45.97,
+                "swing": -1.05,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            }
+        ],
+        "tppCoalition": -1.05,
+        "tppLabor": 1.05,
+        "toMajor": 4.92,
+        "toMinor": -4.92
+    },
+    {
+        "id": 127,
+        "name": "Kingsford Smith",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37039,
+                "candidate_name": "TAN, Grace",
+                "votesTotal": 34598,
+                "votesPercent": 35.5,
+                "swing": -5.69,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36781,
+                "candidate_name": "THISTLETHWAITE, Matt",
+                "votesTotal": 62868,
+                "votesPercent": 64.5,
+                "swing": 5.69,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -5.69,
+        "tppLabor": 5.69,
+        "toMajor": -5.03,
+        "toMinor": 5.03
+    },
+    {
+        "id": 128,
+        "name": "Lindsay",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36783,
+                "candidate_name": "ROSS, Trevor",
+                "votesTotal": 45723,
+                "votesPercent": 43.66,
+                "swing": -1.3,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37160,
+                "candidate_name": "McINTOSH, Melissa",
+                "votesTotal": 59003,
+                "votesPercent": 56.34,
+                "swing": 1.3,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 1.3,
+        "tppLabor": -1.3,
+        "toMajor": -3.63,
+        "toMinor": 3.63
+    },
+    {
+        "id": 130,
+        "name": "Lyne",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36310,
+                "candidate_name": "GILLESPIE, David",
+                "votesTotal": 68421,
+                "votesPercent": 63.8,
+                "swing": -1.37,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36775,
+                "candidate_name": "SIMPSON, Alex",
+                "votesTotal": 38827,
+                "votesPercent": 36.2,
+                "swing": 1.37,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.37,
+        "tppLabor": 1.37,
+        "toMajor": -8.46,
+        "toMinor": 8.46
+    },
+    {
+        "id": 131,
+        "name": "Macarthur",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37169,
+                "candidate_name": "PAUDEL, Binod",
+                "votesTotal": 46088,
+                "votesPercent": 41.47,
+                "swing": -0.13,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36906,
+                "candidate_name": "FREELANDER, Mike",
+                "votesTotal": 65039,
+                "votesPercent": 58.53,
+                "swing": 0.13,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -0.13,
+        "tppLabor": 0.13,
+        "toMajor": -2.25,
+        "toMinor": 2.25
+    },
+    {
+        "id": 132,
+        "name": "Mackellar",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37450,
+                "candidate_name": "SCAMPS, Sophie",
+                "votesTotal": 51973,
+                "votesPercent": 52.5,
+                "swing": 52.5,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 37164,
+                "candidate_name": "FALINSKI, Jason",
+                "votesTotal": 47018,
+                "votesPercent": 47.5,
+                "swing": 47.5,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -4.62,
+        "tppLabor": 4.62,
+        "toMajor": -20.3,
+        "toMinor": 20.3
+    },
+    {
+        "id": 133,
+        "name": "Macquarie",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36819,
+                "candidate_name": "TEMPLEMAN, Susan",
+                "votesTotal": 55143,
+                "votesPercent": 57.77,
+                "swing": 7.58,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37170,
+                "candidate_name": "RICHARDS, Sarah",
+                "votesTotal": 40309,
+                "votesPercent": 42.23,
+                "swing": -7.58,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -7.58,
+        "tppLabor": 7.58,
+        "toMajor": -5.6,
+        "toMinor": 5.6
+    },
+    {
+        "id": 315,
+        "name": "McMahon",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36815,
+                "candidate_name": "BOWEN, Chris",
+                "votesTotal": 50413,
+                "votesPercent": 59.49,
+                "swing": 2.85,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37172,
+                "candidate_name": "SINGHA, Vivek",
+                "votesTotal": 34329,
+                "votesPercent": 40.51,
+                "swing": -2.85,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -2.85,
+        "tppLabor": 2.85,
+        "toMajor": -3.08,
+        "toMinor": 3.08
+    },
+    {
+        "id": 134,
+        "name": "Mitchell",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36822,
+                "candidate_name": "SELVARAJ, Immanuel",
+                "votesTotal": 42531,
+                "votesPercent": 39.31,
+                "swing": 7.94,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37174,
+                "candidate_name": "HAWKE, Alex",
+                "votesTotal": 65662,
+                "votesPercent": 60.69,
+                "swing": -7.94,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -7.94,
+        "tppLabor": 7.94,
+        "toMajor": -7.88,
+        "toMinor": 7.88
+    },
+    {
+        "id": 135,
+        "name": "New England",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36335,
+                "candidate_name": "JOYCE, Barnaby",
+                "votesTotal": 64622,
+                "votesPercent": 66.43,
+                "swing": -1.2,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36918,
+                "candidate_name": "HUGHES, Laura",
+                "votesTotal": 32650,
+                "votesPercent": 33.57,
+                "swing": 1.2,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.2,
+        "tppLabor": 1.2,
+        "toMajor": 3.46,
+        "toMinor": -3.46
+    },
+    {
+        "id": 136,
+        "name": "Newcastle",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36804,
+                "candidate_name": "CLAYDON, Sharon",
+                "votesTotal": 71807,
+                "votesPercent": 67.98,
+                "swing": 4.15,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37181,
+                "candidate_name": "WARK, Katrina",
+                "votesTotal": 33820,
+                "votesPercent": 32.02,
+                "swing": -4.15,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -4.15,
+        "tppLabor": 4.15,
+        "toMajor": -6.43,
+        "toMinor": 6.43
+    },
+    {
+        "id": 137,
+        "name": "North Sydney",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37166,
+                "candidate_name": "ZIMMERMAN, Trent",
+                "votesTotal": 45726,
+                "votesPercent": 47.08,
+                "swing": 47.08,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37452,
+                "candidate_name": "TINK, Kylea Jane",
+                "votesTotal": 51392,
+                "votesPercent": 52.92,
+                "swing": 52.92,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -8.01,
+        "tppLabor": 8.01,
+        "toMajor": -17.54,
+        "toMinor": 17.54
+    },
+    {
+        "id": 138,
+        "name": "Page",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36935,
+                "candidate_name": "DEEGAN, Patrick",
+                "votesTotal": 41057,
+                "votesPercent": 39.26,
+                "swing": -1.29,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36316,
+                "candidate_name": "HOGAN, Kevin",
+                "votesTotal": 63512,
+                "votesPercent": 60.74,
+                "swing": 1.29,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            }
+        ],
+        "tppCoalition": 1.29,
+        "tppLabor": -1.29,
+        "toMajor": -11.69,
+        "toMinor": 11.69
+    },
+    {
+        "id": 139,
+        "name": "Parkes",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36363,
+                "candidate_name": "COULTON, Mark",
+                "votesTotal": 60433,
+                "votesPercent": 67.84,
+                "swing": 0.93,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36798,
+                "candidate_name": "AYOUB, Jack",
+                "votesTotal": 28647,
+                "votesPercent": 32.16,
+                "swing": -0.93,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": 0.93,
+        "tppLabor": -0.93,
+        "toMajor": -4.79,
+        "toMinor": 4.79
+    },
+    {
+        "id": 140,
+        "name": "Parramatta",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37177,
+                "candidate_name": "KOVACIC, Maria",
+                "votesTotal": 38285,
+                "votesPercent": 45.43,
+                "swing": -1.07,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36800,
+                "candidate_name": "CHARLTON, Andrew",
+                "votesTotal": 45980,
+                "votesPercent": 54.57,
+                "swing": 1.07,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.07,
+        "tppLabor": 1.07,
+        "toMajor": -10.71,
+        "toMinor": 10.71
+    },
+    {
+        "id": 249,
+        "name": "Paterson",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37175,
+                "candidate_name": "VITNELL, Brooke",
+                "votesTotal": 53638,
+                "votesPercent": 46.69,
+                "swing": 1.73,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36910,
+                "candidate_name": "SWANSON, Meryl",
+                "votesTotal": 61247,
+                "votesPercent": 53.31,
+                "swing": -1.73,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": 1.73,
+        "tppLabor": -1.73,
+        "toMajor": 3.76,
+        "toMinor": -3.76
+    },
+    {
+        "id": 144,
+        "name": "Reid",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36917,
+                "candidate_name": "SITOU, Sally",
+                "votesTotal": 54076,
+                "votesPercent": 55.19,
+                "swing": 8.37,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37155,
+                "candidate_name": "MARTIN, Fiona",
+                "votesTotal": 43900,
+                "votesPercent": 44.81,
+                "swing": -8.37,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -8.37,
+        "tppLabor": 8.37,
+        "toMajor": -6.02,
+        "toMinor": 6.02
+    },
+    {
+        "id": 145,
+        "name": "Richmond",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36802,
+                "candidate_name": "ELLIOT, Justine",
+                "votesTotal": 58104,
+                "votesPercent": 58.23,
+                "swing": 4.15,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36351,
+                "candidate_name": "HONE, Kimberly",
+                "votesTotal": 41680,
+                "votesPercent": 41.77,
+                "swing": -4.15,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            }
+        ],
+        "tppCoalition": -4.15,
+        "tppLabor": 4.15,
+        "toMajor": -16.42,
+        "toMinor": 16.42
+    },
+    {
+        "id": 250,
+        "name": "Riverina",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36807,
+                "candidate_name": "JEFFRESON, Mark",
+                "votesTotal": 34685,
+                "votesPercent": 35.15,
+                "swing": 4.63,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36324,
+                "candidate_name": "McCORMACK, Michael",
+                "votesTotal": 63979,
+                "votesPercent": 64.85,
+                "swing": -4.63,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            }
+        ],
+        "tppCoalition": -4.63,
+        "tppLabor": 4.63,
+        "toMajor": -16.05,
+        "toMinor": 16.05
+    },
+    {
+        "id": 146,
+        "name": "Robertson",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36801,
+                "candidate_name": "REID, Gordon",
+                "votesTotal": 50277,
+                "votesPercent": 52.26,
+                "swing": 6.5,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37154,
+                "candidate_name": "WICKS, Lucy",
+                "votesTotal": 45933,
+                "votesPercent": 47.74,
+                "swing": -6.5,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.5,
+        "tppLabor": 6.5,
+        "toMajor": -3.34,
+        "toMinor": 3.34
+    },
+    {
+        "id": 148,
+        "name": "Shortland",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37156,
+                "candidate_name": "McGILL, Nell",
+                "votesTotal": 44314,
+                "votesPercent": 44.18,
+                "swing": -1.37,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36806,
+                "candidate_name": "CONROY, Pat",
+                "votesTotal": 55985,
+                "votesPercent": 55.82,
+                "swing": 1.37,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.37,
+        "tppLabor": 1.37,
+        "toMajor": -6.37,
+        "toMinor": 6.37
+    },
+    {
+        "id": 149,
+        "name": "Sydney",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36805,
+                "candidate_name": "PLIBERSEK, Tanya",
+                "votesTotal": 68770,
+                "votesPercent": 66.69,
+                "swing": 66.69,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 36308,
+                "candidate_name": "SAHAI, Chetan",
+                "votesTotal": 34355,
+                "votesPercent": 33.31,
+                "swing": 33.31,
+                "party_short": "GRN",
+                "party_long": "The Greens"
+            }
+        ],
+        "tppCoalition": -6.9,
+        "tppLabor": 6.9,
+        "toMajor": -5.54,
+        "toMinor": 5.54
+    },
+    {
+        "id": 151,
+        "name": "Warringah",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 32467,
+                "candidate_name": "STEGGALL, Zali",
+                "votesTotal": 56892,
+                "votesPercent": 60.96,
+                "swing": 3.72,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 37159,
+                "candidate_name": "DEVES, Katherine",
+                "votesTotal": 36442,
+                "votesPercent": 39.04,
+                "swing": -3.72,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -0.69,
+        "tppLabor": 0.69,
+        "toMajor": -3.9,
+        "toMinor": 3.9
+    },
+    {
+        "id": 251,
+        "name": "Watson",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37056,
+                "candidate_name": "AKTER, Sazeda",
+                "votesTotal": 29917,
+                "votesPercent": 34.9,
+                "swing": -1.58,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36809,
+                "candidate_name": "BURKE, Tony",
+                "votesTotal": 55810,
+                "votesPercent": 65.1,
+                "swing": 1.58,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            }
+        ],
+        "tppCoalition": -1.58,
+        "tppLabor": 1.58,
+        "toMajor": -2.68,
+        "toMinor": 2.68
+    },
+    {
+        "id": 152,
+        "name": "Wentworth",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 37451,
+                "candidate_name": "SPENDER, Allegra",
+                "votesTotal": 48186,
+                "votesPercent": 54.19,
+                "swing": 54.19,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 37051,
+                "candidate_name": "SHARMA, Dave",
+                "votesTotal": 40737,
+                "votesPercent": 45.81,
+                "swing": 45.81,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -3.93,
+        "tppLabor": 3.93,
+        "toMajor": -7.05,
+        "toMinor": 7.05
+    },
+    {
+        "id": 153,
+        "name": "Werriwa",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36810,
+                "candidate_name": "STANLEY, Anne Maree",
+                "votesTotal": 56173,
+                "votesPercent": 55.82,
+                "swing": 0.35,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37050,
+                "candidate_name": "KAYAL, Sam",
+                "votesTotal": 44458,
+                "votesPercent": 44.18,
+                "swing": -0.35,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -0.35,
+        "tppLabor": 0.35,
+        "toMajor": -12.5,
+        "toMinor": 12.5
+    },
+    {
+        "id": 150,
+        "name": "Whitlam",
+        "state": "NSW",
+        "tcp": [
+            {
+                "candidate_id": 36811,
+                "candidate_name": "JONES, Stephen",
+                "votesTotal": 65683,
+                "votesPercent": 60.07,
+                "swing": -0.84,
+                "party_short": "ALP",
+                "party_long": "Labor"
+            },
+            {
+                "candidate_id": 37055,
+                "candidate_name": "CAINS, Mike",
+                "votesTotal": 43654,
+                "votesPercent": 39.93,
+                "swing": 0.84,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 0.84,
+        "tppLabor": -0.84,
+        "toMajor": -1.03,
+        "toMinor": 1.03
+    },
+    {
+        "id": 306,
+        "name": "Lingiari",
+        "state": "NT",
+        "tcp": [
+            {
+                "candidate_id": 36968,
+                "candidate_name": "RYAN, Damien",
+                "votesTotal": 22473,
+                "votesPercent": 49.05,
+                "swing": 4.51,
+                "party_short": "CLP",
+                "party_long": "NT CLP"
+            },
+            {
+                "candidate_id": 37286,
+                "candidate_name": "SCRYMGOUR, Marion",
+                "votesTotal": 23339,
+                "votesPercent": 50.95,
+                "swing": -4.51,
+                "party_short": "ALP",
+                "party_long": "A.L.P."
+            }
+        ],
+        "tppCoalition": 4.51,
+        "tppLabor": -4.51,
+        "toMajor": -10.46,
+        "toMinor": 10.46
+    },
+    {
+        "id": 307,
+        "name": "Solomon",
+        "state": "NT",
+        "tcp": [
+            {
+                "candidate_id": 37280,
+                "candidate_name": "GOSLING, Luke",
+                "votesTotal": 32726,
+                "votesPercent": 59.37,
+                "swing": 6.29,
+                "party_short": "ALP",
+                "party_long": "A.L.P."
+            },
+            {
+                "candidate_id": 36937,
+                "candidate_name": "MACFARLANE, Tina",
+                "votesTotal": 22399,
+                "votesPercent": 40.63,
+                "swing": -6.29,
+                "party_short": "CLP",
+                "party_long": "NT CLP"
+            }
+        ],
+        "tppCoalition": -6.29,
+        "tppLabor": 6.29,
+        "toMajor": -13.61,
+        "toMinor": 13.61
+    },
+    {
+        "id": 304,
+        "name": "Blair",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37216,
+                "candidate_name": "NEUMANN, Shayne",
+                "votesTotal": 57575,
+                "votesPercent": 55.23,
+                "swing": 4.02,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37469,
+                "candidate_name": "BIGGINS, Sam",
+                "votesTotal": 46672,
+                "votesPercent": 44.77,
+                "swing": -4.02,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -4.02,
+        "tppLabor": 4.02,
+        "toMajor": 3.61,
+        "toMinor": -3.61
+    },
+    {
+        "id": 310,
+        "name": "Bonner",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37472,
+                "candidate_name": "VASTA, Ross",
+                "votesTotal": 51471,
+                "votesPercent": 53.41,
+                "swing": -4.0,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37220,
+                "candidate_name": "YOUNG, Tabatha",
+                "votesTotal": 44903,
+                "votesPercent": 46.59,
+                "swing": 4.0,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.0,
+        "tppLabor": 4.0,
+        "toMajor": -6.21,
+        "toMinor": 6.21
+    },
+    {
+        "id": 155,
+        "name": "Bowman",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37477,
+                "candidate_name": "PIKE, Henry",
+                "votesTotal": 56447,
+                "votesPercent": 55.51,
+                "swing": -4.73,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37229,
+                "candidate_name": "DUFF, Donisha",
+                "votesTotal": 45245,
+                "votesPercent": 44.49,
+                "swing": 4.73,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.73,
+        "tppLabor": 4.73,
+        "toMajor": -3.69,
+        "toMinor": 3.69
+    },
+    {
+        "id": 156,
+        "name": "Brisbane",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37338,
+                "candidate_name": "BATES, Stephen",
+                "votesTotal": 58460,
+                "votesPercent": 53.73,
+                "swing": 53.73,
+                "party_short": "GRN",
+                "party_long": "Queensland Greens"
+            },
+            {
+                "candidate_id": 37482,
+                "candidate_name": "EVANS, Trevor",
+                "votesTotal": 50338,
+                "votesPercent": 46.27,
+                "swing": 46.27,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -9.32,
+        "tppLabor": 9.32,
+        "toMajor": -7.36,
+        "toMinor": 7.36
+    },
+    {
+        "id": 157,
+        "name": "Capricornia",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37232,
+                "candidate_name": "ROBERTSON, Russell",
+                "votesTotal": 39196,
+                "votesPercent": 43.41,
+                "swing": 5.76,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37479,
+                "candidate_name": "LANDRY, Michelle",
+                "votesTotal": 51096,
+                "votesPercent": 56.59,
+                "swing": -5.76,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -5.76,
+        "tppLabor": 5.76,
+        "toMajor": 3.11,
+        "toMinor": -3.11
+    },
+    {
+        "id": 158,
+        "name": "Dawson",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37485,
+                "candidate_name": "WILLCOX, Andrew",
+                "votesTotal": 55930,
+                "votesPercent": 60.42,
+                "swing": -4.19,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37234,
+                "candidate_name": "HAMILTON, Shane",
+                "votesTotal": 36643,
+                "votesPercent": 39.58,
+                "swing": 4.19,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.19,
+        "tppLabor": 4.19,
+        "toMajor": 4.56,
+        "toMinor": -4.56
+    },
+    {
+        "id": 252,
+        "name": "Dickson",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37493,
+                "candidate_name": "DUTTON, Peter",
+                "votesTotal": 51196,
+                "votesPercent": 51.7,
+                "swing": -2.94,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37235,
+                "candidate_name": "FRANCE, Ali",
+                "votesTotal": 47833,
+                "votesPercent": 48.3,
+                "swing": 2.94,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.94,
+        "tppLabor": 2.94,
+        "toMajor": -3.49,
+        "toMinor": 3.49
+    },
+    {
+        "id": 159,
+        "name": "Fadden",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37238,
+                "candidate_name": "DEL FABBRO, Letitia",
+                "votesTotal": 41645,
+                "votesPercent": 39.37,
+                "swing": 3.55,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37495,
+                "candidate_name": "ROBERT, Stuart",
+                "votesTotal": 64126,
+                "votesPercent": 60.63,
+                "swing": -3.55,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -3.55,
+        "tppLabor": 3.55,
+        "toMajor": -4.26,
+        "toMinor": 4.26
+    },
+    {
+        "id": 160,
+        "name": "Fairfax",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37499,
+                "candidate_name": "O'BRIEN, Ted",
+                "votesTotal": 61108,
+                "votesPercent": 58.95,
+                "swing": -4.49,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37240,
+                "candidate_name": "FERGUSON, Sue",
+                "votesTotal": 42551,
+                "votesPercent": 41.05,
+                "swing": 4.49,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.49,
+        "tppLabor": 4.49,
+        "toMajor": -4.34,
+        "toMinor": 4.34
+    },
+    {
+        "id": 161,
+        "name": "Fisher",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37247,
+                "candidate_name": "ANDREWS, Judene",
+                "votesTotal": 44838,
+                "votesPercent": 41.33,
+                "swing": 4.03,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37504,
+                "candidate_name": "WALLACE, Andrew",
+                "votesTotal": 63656,
+                "votesPercent": 58.67,
+                "swing": -4.03,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -4.03,
+        "tppLabor": 4.03,
+        "toMajor": -4.68,
+        "toMinor": 4.68
+    },
+    {
+        "id": 311,
+        "name": "Flynn",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37252,
+                "candidate_name": "BURNETT, Matt",
+                "votesTotal": 42629,
+                "votesPercent": 46.18,
+                "swing": 4.84,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37512,
+                "candidate_name": "BOYCE, Colin",
+                "votesTotal": 49682,
+                "votesPercent": 53.82,
+                "swing": -4.84,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -4.84,
+        "tppLabor": 4.84,
+        "toMajor": 3.87,
+        "toMinor": -3.87
+    },
+    {
+        "id": 162,
+        "name": "Forde",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37507,
+                "candidate_name": "VAN MANEN, Bert",
+                "votesTotal": 51311,
+                "votesPercent": 54.23,
+                "swing": -4.37,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37258,
+                "candidate_name": "HOLZBERGER, Rowan",
+                "votesTotal": 43301,
+                "votesPercent": 45.77,
+                "swing": 4.37,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.37,
+        "tppLabor": 4.37,
+        "toMajor": -8.09,
+        "toMinor": 8.09
+    },
+    {
+        "id": 163,
+        "name": "Griffith",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37364,
+                "candidate_name": "CHANDLER-MATHER, Max",
+                "votesTotal": 64271,
+                "votesPercent": 60.46,
+                "swing": 60.46,
+                "party_short": "GRN",
+                "party_long": "Queensland Greens"
+            },
+            {
+                "candidate_id": 37465,
+                "candidate_name": "ROBERTS, Olivia",
+                "votesTotal": 42039,
+                "votesPercent": 39.54,
+                "swing": 39.54,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -8.21,
+        "tppLabor": 8.21,
+        "toMajor": -12.24,
+        "toMinor": 12.24
+    },
+    {
+        "id": 164,
+        "name": "Groom",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 36178,
+                "candidate_name": "HOLT, Suzie",
+                "votesTotal": 41392,
+                "votesPercent": 43.11,
+                "swing": 43.11,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 37470,
+                "candidate_name": "HAMILTON, Garth",
+                "votesTotal": 54612,
+                "votesPercent": 56.89,
+                "swing": 56.89,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -6.31,
+        "tppLabor": 6.31,
+        "toMajor": -9.54,
+        "toMinor": 9.54
+    },
+    {
+        "id": 165,
+        "name": "Herbert",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37239,
+                "candidate_name": "RING, John",
+                "votesTotal": 35337,
+                "votesPercent": 38.23,
+                "swing": -3.41,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37471,
+                "candidate_name": "THOMPSON, Phillip",
+                "votesTotal": 57103,
+                "votesPercent": 61.77,
+                "swing": 3.41,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": 3.41,
+        "tppLabor": -3.41,
+        "toMajor": 6.05,
+        "toMinor": -6.05
+    },
+    {
+        "id": 166,
+        "name": "Hinkler",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37476,
+                "candidate_name": "PITT, Keith",
+                "votesTotal": 60918,
+                "votesPercent": 60.07,
+                "swing": -4.43,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37242,
+                "candidate_name": "SCANES, Jason",
+                "votesTotal": 40488,
+                "votesPercent": 39.93,
+                "swing": 4.43,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.43,
+        "tppLabor": 4.43,
+        "toMajor": -3.52,
+        "toMinor": 3.52
+    },
+    {
+        "id": 167,
+        "name": "Kennedy",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37304,
+                "candidate_name": "KATTER, Bob",
+                "votesTotal": 59060,
+                "votesPercent": 63.1,
+                "swing": -0.23,
+                "party_short": "KAP",
+                "party_long": "Katter's Australian Party (KAP)"
+            },
+            {
+                "candidate_id": 37474,
+                "candidate_name": "MACDONALD, Bryce",
+                "votesTotal": 34544,
+                "votesPercent": 36.9,
+                "swing": 0.23,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -4.35,
+        "tppLabor": 4.35,
+        "toMajor": -0.21,
+        "toMinor": 0.21
+    },
+    {
+        "id": 168,
+        "name": "Leichhardt",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37480,
+                "candidate_name": "ENTSCH, Warren",
+                "votesTotal": 49010,
+                "votesPercent": 53.44,
+                "swing": -0.73,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37251,
+                "candidate_name": "FAITH, Elida",
+                "votesTotal": 42697,
+                "votesPercent": 46.56,
+                "swing": 0.73,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -0.73,
+        "tppLabor": 0.73,
+        "toMajor": -2.08,
+        "toMinor": 2.08
+    },
+    {
+        "id": 169,
+        "name": "Lilley",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37488,
+                "candidate_name": "LOBO, Vivian",
+                "votesTotal": 39066,
+                "votesPercent": 39.46,
+                "swing": -9.9,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37254,
+                "candidate_name": "WELLS, Anika",
+                "votesTotal": 59941,
+                "votesPercent": 60.54,
+                "swing": 9.9,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -9.9,
+        "tppLabor": 9.9,
+        "toMajor": -4.75,
+        "toMinor": 4.75
+    },
+    {
+        "id": 302,
+        "name": "Longman",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37257,
+                "candidate_name": "FANNING, Rebecca",
+                "votesTotal": 50706,
+                "votesPercent": 46.92,
+                "swing": 0.2,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37492,
+                "candidate_name": "YOUNG, Terry",
+                "votesTotal": 57359,
+                "votesPercent": 53.08,
+                "swing": -0.2,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -0.2,
+        "tppLabor": 0.2,
+        "toMajor": -3.02,
+        "toMinor": 3.02
+    },
+    {
+        "id": 170,
+        "name": "Maranoa",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37498,
+                "candidate_name": "LITTLEPROUD, David",
+                "votesTotal": 67153,
+                "votesPercent": 72.12,
+                "swing": -3.3,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37246,
+                "candidate_name": "KERRIGAN, Dave",
+                "votesTotal": 25962,
+                "votesPercent": 27.88,
+                "swing": 3.3,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -3.3,
+        "tppLabor": 3.3,
+        "toMajor": -0.01,
+        "toMinor": 0.01
+    },
+    {
+        "id": 171,
+        "name": "McPherson",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37494,
+                "candidate_name": "ANDREWS, Karen",
+                "votesTotal": 57605,
+                "votesPercent": 59.34,
+                "swing": -2.86,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37260,
+                "candidate_name": "UNGERER, Carl",
+                "votesTotal": 39478,
+                "votesPercent": 40.66,
+                "swing": 2.86,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.86,
+        "tppLabor": 2.86,
+        "toMajor": -5.53,
+        "toMinor": 5.53
+    },
+    {
+        "id": 172,
+        "name": "Moncrieff",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37501,
+                "candidate_name": "BELL, Angie",
+                "votesTotal": 60080,
+                "votesPercent": 61.19,
+                "swing": -4.17,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37250,
+                "candidate_name": "PALMER, Glen",
+                "votesTotal": 38098,
+                "votesPercent": 38.81,
+                "swing": 4.17,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.17,
+        "tppLabor": 4.17,
+        "toMajor": -6.33,
+        "toMinor": 6.33
+    },
+    {
+        "id": 173,
+        "name": "Moreton",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37253,
+                "candidate_name": "PERRETT, Graham",
+                "votesTotal": 54690,
+                "votesPercent": 59.09,
+                "swing": 7.19,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37468,
+                "candidate_name": "HUANG, Steven",
+                "votesTotal": 37866,
+                "votesPercent": 40.91,
+                "swing": -7.19,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -7.19,
+        "tppLabor": 7.19,
+        "toMajor": -5.32,
+        "toMinor": 5.32
+    },
+    {
+        "id": 174,
+        "name": "Oxley",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37693,
+                "candidate_name": "MCMILLEN, Kyle",
+                "votesTotal": 36644,
+                "votesPercent": 38.41,
+                "swing": -5.2,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37259,
+                "candidate_name": "DICK, Milton",
+                "votesTotal": 58768,
+                "votesPercent": 61.59,
+                "swing": 5.2,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -5.2,
+        "tppLabor": 5.2,
+        "toMajor": -2.51,
+        "toMinor": 2.51
+    },
+    {
+        "id": 175,
+        "name": "Petrie",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37268,
+                "candidate_name": "DENTON, Mick",
+                "votesTotal": 48532,
+                "votesPercent": 45.56,
+                "swing": 3.96,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37486,
+                "candidate_name": "HOWARTH, Luke",
+                "votesTotal": 57981,
+                "votesPercent": 54.44,
+                "swing": -3.96,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -3.96,
+        "tppLabor": 3.96,
+        "toMajor": -5.46,
+        "toMinor": 5.46
+    },
+    {
+        "id": 176,
+        "name": "Rankin",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37491,
+                "candidate_name": "DARWEN, Paul",
+                "votesTotal": 35930,
+                "votesPercent": 40.91,
+                "swing": -2.65,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37263,
+                "candidate_name": "CHALMERS, Jim",
+                "votesTotal": 51892,
+                "votesPercent": 59.09,
+                "swing": 2.65,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.65,
+        "tppLabor": 2.65,
+        "toMajor": 0.18,
+        "toMinor": -0.18
+    },
+    {
+        "id": 177,
+        "name": "Ryan",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37370,
+                "candidate_name": "WATSON-BROWN, Elizabeth",
+                "votesTotal": 52286,
+                "votesPercent": 52.65,
+                "swing": 52.65,
+                "party_short": "GRN",
+                "party_long": "Queensland Greens"
+            },
+            {
+                "candidate_id": 37496,
+                "candidate_name": "SIMMONDS, Julian",
+                "votesTotal": 47030,
+                "votesPercent": 47.35,
+                "swing": 47.35,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            }
+        ],
+        "tppCoalition": -8.45,
+        "tppLabor": 8.45,
+        "toMajor": -12.24,
+        "toMinor": 12.24
+    },
+    {
+        "id": 178,
+        "name": "Wide Bay",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37506,
+                "candidate_name": "O'BRIEN, Llew",
+                "votesTotal": 58708,
+                "votesPercent": 61.34,
+                "swing": -1.81,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37269,
+                "candidate_name": "WILLIAMS, Geoff",
+                "votesTotal": 36995,
+                "votesPercent": 38.66,
+                "swing": 1.81,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -1.81,
+        "tppLabor": 1.81,
+        "toMajor": -4.11,
+        "toMinor": 4.11
+    },
+    {
+        "id": 316,
+        "name": "Wright",
+        "state": "QLD",
+        "tcp": [
+            {
+                "candidate_id": 37500,
+                "candidate_name": "BUCHHOLZ, Scott",
+                "votesTotal": 64506,
+                "votesPercent": 60.89,
+                "swing": -3.69,
+                "party_short": "LNP",
+                "party_long": "Liberal National Party of Queensland"
+            },
+            {
+                "candidate_id": 37270,
+                "candidate_name": "McCREADIE, Pam",
+                "votesTotal": 41427,
+                "votesPercent": 39.11,
+                "swing": 3.69,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -3.69,
+        "tppLabor": 3.69,
+        "toMajor": 0.91,
+        "toMinor": -0.91
+    },
+    {
+        "id": 179,
+        "name": "Adelaide",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 37049,
+                "candidate_name": "GRANTHAM, Amy",
+                "votesTotal": 42948,
+                "votesPercent": 38.09,
+                "swing": -3.73,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36973,
+                "candidate_name": "GEORGANAS, Steve",
+                "votesTotal": 69816,
+                "votesPercent": 61.91,
+                "swing": 3.73,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -3.73,
+        "tppLabor": 3.73,
+        "toMajor": -4.45,
+        "toMinor": 4.45
+    },
+    {
+        "id": 180,
+        "name": "Barker",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 37083,
+                "candidate_name": "PASIN, Tony",
+                "votesTotal": 70483,
+                "votesPercent": 66.62,
+                "swing": -2.32,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36977,
+                "candidate_name": "BRAES, Mark",
+                "votesTotal": 35316,
+                "votesPercent": 33.38,
+                "swing": 2.32,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.32,
+        "tppLabor": 2.32,
+        "toMajor": -5.06,
+        "toMinor": 5.06
+    },
+    {
+        "id": 182,
+        "name": "Boothby",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 37059,
+                "candidate_name": "SWIFT, Rachel",
+                "votesTotal": 53128,
+                "votesPercent": 46.72,
+                "swing": -4.66,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36979,
+                "candidate_name": "MILLER-FROST, Louise",
+                "votesTotal": 60579,
+                "votesPercent": 53.28,
+                "swing": 4.66,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.66,
+        "tppLabor": 4.66,
+        "toMajor": -9.52,
+        "toMinor": 9.52
+    },
+    {
+        "id": 183,
+        "name": "Grey",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 36978,
+                "candidate_name": "WATSON, Julie",
+                "votesTotal": 41180,
+                "votesPercent": 39.93,
+                "swing": 3.25,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37069,
+                "candidate_name": "RAMSEY, Rowan",
+                "votesTotal": 61938,
+                "votesPercent": 60.07,
+                "swing": -3.25,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -3.25,
+        "tppLabor": 3.25,
+        "toMajor": -6.75,
+        "toMinor": 6.75
+    },
+    {
+        "id": 185,
+        "name": "Hindmarsh",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 37075,
+                "candidate_name": "FINIZIO, Anna",
+                "votesTotal": 45300,
+                "votesPercent": 41.05,
+                "swing": -2.41,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36984,
+                "candidate_name": "BUTLER, Mark",
+                "votesTotal": 65043,
+                "votesPercent": 58.95,
+                "swing": 2.41,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.41,
+        "tppLabor": 2.41,
+        "toMajor": -4.96,
+        "toMinor": 4.96
+    },
+    {
+        "id": 186,
+        "name": "Kingston",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 36983,
+                "candidate_name": "RISHWORTH, Amanda",
+                "votesTotal": 72564,
+                "votesPercent": 66.35,
+                "swing": 4.41,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37071,
+                "candidate_name": "BOURNE, Kathleen",
+                "votesTotal": 36798,
+                "votesPercent": 33.65,
+                "swing": -4.41,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -4.41,
+        "tppLabor": 4.41,
+        "toMajor": -7.24,
+        "toMinor": 7.24
+    },
+    {
+        "id": 187,
+        "name": "Makin",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 36991,
+                "candidate_name": "ZAPPIA, Tony",
+                "votesTotal": 65444,
+                "votesPercent": 60.8,
+                "swing": 1.08,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37052,
+                "candidate_name": "HOWARD-JONES, Alan",
+                "votesTotal": 42198,
+                "votesPercent": 39.2,
+                "swing": -1.08,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -1.08,
+        "tppLabor": 1.08,
+        "toMajor": -3.56,
+        "toMinor": 3.56
+    },
+    {
+        "id": 188,
+        "name": "Mayo",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 37710,
+                "candidate_name": "SHARKIE, Rebekha",
+                "votesTotal": 72355,
+                "votesPercent": 62.26,
+                "swing": 7.12,
+                "party_short": "XEN",
+                "party_long": "Centre Alliance"
+            },
+            {
+                "candidate_id": 37057,
+                "candidate_name": "BLUCK, Allison",
+                "votesTotal": 43859,
+                "votesPercent": 37.74,
+                "swing": -7.12,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -4.13,
+        "tppLabor": 4.13,
+        "toMajor": -6.17,
+        "toMinor": 6.17
+    },
+    {
+        "id": 325,
+        "name": "Spence",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 36990,
+                "candidate_name": "BURNELL, Matt",
+                "votesTotal": 66818,
+                "votesPercent": 62.9,
+                "swing": -1.23,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37061,
+                "candidate_name": "LOCK, Shawn",
+                "votesTotal": 39409,
+                "votesPercent": 37.1,
+                "swing": 1.23,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 1.23,
+        "tppLabor": -1.23,
+        "toMajor": -7.37,
+        "toMinor": 7.37
+    },
+    {
+        "id": 190,
+        "name": "Sturt",
+        "state": "SA",
+        "tcp": [
+            {
+                "candidate_id": 36996,
+                "candidate_name": "BARAM, Sonja",
+                "votesTotal": 55797,
+                "votesPercent": 49.55,
+                "swing": 6.42,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37067,
+                "candidate_name": "STEVENS, James",
+                "votesTotal": 56813,
+                "votesPercent": 50.45,
+                "swing": -6.42,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.42,
+        "tppLabor": 6.42,
+        "toMajor": -6.63,
+        "toMinor": 6.63
+    },
+    {
+        "id": 192,
+        "name": "Bass",
+        "state": "TAS",
+        "tcp": [
+            {
+                "candidate_id": 37134,
+                "candidate_name": "ARCHER, Bridget Kathleen",
+                "votesTotal": 35288,
+                "votesPercent": 51.43,
+                "swing": 1.02,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37226,
+                "candidate_name": "HART, Ross",
+                "votesTotal": 33321,
+                "votesPercent": 48.57,
+                "swing": -1.02,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 1.02,
+        "tppLabor": -1.02,
+        "toMajor": -10.1,
+        "toMinor": 10.1
+    },
+    {
+        "id": 193,
+        "name": "Braddon",
+        "state": "TAS",
+        "tcp": [
+            {
+                "candidate_id": 37137,
+                "candidate_name": "PEARCE, Gavin",
+                "votesTotal": 40968,
+                "votesPercent": 58.03,
+                "swing": 4.94,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37231,
+                "candidate_name": "LYNCH, Chris",
+                "votesTotal": 29630,
+                "votesPercent": 41.97,
+                "swing": -4.94,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 4.94,
+        "tppLabor": -4.94,
+        "toMajor": -5.7,
+        "toMinor": 5.7
+    },
+    {
+        "id": 319,
+        "name": "Clark",
+        "state": "TAS",
+        "tcp": [
+            {
+                "candidate_id": 37267,
+                "candidate_name": "DAVIS, Simon",
+                "votesTotal": 19226,
+                "votesPercent": 29.18,
+                "swing": 1.3,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 33553,
+                "candidate_name": "WILKIE, Andrew",
+                "votesTotal": 46668,
+                "votesPercent": 70.82,
+                "swing": -1.3,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -1.07,
+        "tppLabor": 1.07,
+        "toMajor": -2.98,
+        "toMinor": 2.98
+    },
+    {
+        "id": 195,
+        "name": "Franklin",
+        "state": "TAS",
+        "tcp": [
+            {
+                "candidate_id": 37272,
+                "candidate_name": "COLLINS, Julie",
+                "votesTotal": 45392,
+                "votesPercent": 63.7,
+                "swing": 1.49,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 37140,
+                "candidate_name": "JOHNSON, Kristy Maree",
+                "votesTotal": 25867,
+                "votesPercent": 36.3,
+                "swing": -1.49,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -1.49,
+        "tppLabor": 1.49,
+        "toMajor": -11.84,
+        "toMinor": 11.84
+    },
+    {
+        "id": 196,
+        "name": "Lyons",
+        "state": "TAS",
+        "tcp": [
+            {
+                "candidate_id": 37139,
+                "candidate_name": "BOWER, Susie",
+                "votesTotal": 35997,
+                "votesPercent": 49.08,
+                "swing": 4.26,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37276,
+                "candidate_name": "MITCHELL, Brian",
+                "votesTotal": 37341,
+                "votesPercent": 50.92,
+                "swing": -4.26,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 4.26,
+        "tppLabor": -4.26,
+        "toMajor": -10.06,
+        "toMinor": 10.06
+    },
+    {
+        "id": 197,
+        "name": "Aston",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36704,
+                "candidate_name": "TUDGE, Alan",
+                "votesTotal": 51840,
+                "votesPercent": 52.81,
+                "swing": -7.32,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36377,
+                "candidate_name": "DOYLE, Mary",
+                "votesTotal": 46320,
+                "votesPercent": 47.19,
+                "swing": 7.32,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -7.32,
+        "tppLabor": 7.32,
+        "toMajor": -8.91,
+        "toMinor": 8.91
+    },
+    {
+        "id": 198,
+        "name": "Ballarat",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36703,
+                "candidate_name": "GREEN, Ben",
+                "votesTotal": 35730,
+                "votesPercent": 37.03,
+                "swing": -2.74,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36409,
+                "candidate_name": "KING, Catherine",
+                "votesTotal": 60770,
+                "votesPercent": 62.97,
+                "swing": 2.74,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.74,
+        "tppLabor": 2.74,
+        "toMajor": -6.61,
+        "toMinor": 6.61
+    },
+    {
+        "id": 200,
+        "name": "Bendigo",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36424,
+                "candidate_name": "CHESTERS, Lisa",
+                "votesTotal": 61968,
+                "votesPercent": 62.11,
+                "swing": 3.26,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36706,
+                "candidate_name": "SCHADE, Darin",
+                "votesTotal": 37811,
+                "votesPercent": 37.89,
+                "swing": -3.26,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -3.26,
+        "tppLabor": 3.26,
+        "toMajor": -5.69,
+        "toMinor": 5.69
+    },
+    {
+        "id": 201,
+        "name": "Bruce",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36413,
+                "candidate_name": "HILL, Julian",
+                "votesTotal": 53920,
+                "votesPercent": 56.59,
+                "swing": -0.69,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36769,
+                "candidate_name": "MOODY, James",
+                "votesTotal": 41370,
+                "votesPercent": 43.41,
+                "swing": 0.69,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 0.69,
+        "tppLabor": -0.69,
+        "toMajor": -13.05,
+        "toMinor": 13.05
+    },
+    {
+        "id": 203,
+        "name": "Calwell",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36705,
+                "candidate_name": "STAKER-GUNN, Tim",
+                "votesTotal": 31963,
+                "votesPercent": 37.61,
+                "swing": 7.23,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36419,
+                "candidate_name": "VAMVAKINOU, Maria",
+                "votesTotal": 53032,
+                "votesPercent": 62.39,
+                "swing": -7.23,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 7.23,
+        "tppLabor": -7.23,
+        "toMajor": -10.49,
+        "toMinor": 10.49
+    },
+    {
+        "id": 204,
+        "name": "Casey",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36711,
+                "candidate_name": "VIOLI, Aaron",
+                "votesTotal": 51283,
+                "votesPercent": 51.48,
+                "swing": -3.14,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36379,
+                "candidate_name": "BRINDLE, Bill",
+                "votesTotal": 48338,
+                "votesPercent": 48.52,
+                "swing": 3.14,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -3.14,
+        "tppLabor": 3.14,
+        "toMajor": -12.49,
+        "toMinor": 12.49
+    },
+    {
+        "id": 205,
+        "name": "Chisholm",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36709,
+                "candidate_name": "LIU, Gladys",
+                "votesTotal": 42070,
+                "votesPercent": 43.59,
+                "swing": -6.86,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36382,
+                "candidate_name": "GARLAND, Carina",
+                "votesTotal": 54448,
+                "votesPercent": 56.41,
+                "swing": 6.86,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -6.86,
+        "tppLabor": 6.86,
+        "toMajor": -1.29,
+        "toMinor": 1.29
+    },
+    {
+        "id": 320,
+        "name": "Cooper",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36527,
+                "candidate_name": "LIDDLE, Celeste",
+                "votesTotal": 38744,
+                "votesPercent": 41.33,
+                "swing": 6.16,
+                "party_short": "GVIC",
+                "party_long": "The Greens"
+            },
+            {
+                "candidate_id": 36384,
+                "candidate_name": "KEARNEY, Ged",
+                "votesTotal": 55006,
+                "votesPercent": 58.67,
+                "swing": -6.16,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 0.75,
+        "tppLabor": -0.75,
+        "toMajor": -8.59,
+        "toMinor": 8.59
+    },
+    {
+        "id": 328,
+        "name": "Corangamite",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36391,
+                "candidate_name": "COKER, Libby",
+                "votesTotal": 58160,
+                "votesPercent": 57.6,
+                "swing": 6.55,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36708,
+                "candidate_name": "ASHER, Stephanie",
+                "votesTotal": 42807,
+                "votesPercent": 42.4,
+                "swing": -6.55,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.55,
+        "tppLabor": 6.55,
+        "toMajor": -5.47,
+        "toMinor": 5.47
+    },
+    {
+        "id": 208,
+        "name": "Corio",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36710,
+                "candidate_name": "PATEL, Manish",
+                "votesTotal": 36025,
+                "votesPercent": 37.16,
+                "swing": -2.52,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36381,
+                "candidate_name": "MARLES, Richard",
+                "votesTotal": 60919,
+                "votesPercent": 62.84,
+                "swing": 2.52,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -2.52,
+        "tppLabor": 2.52,
+        "toMajor": -14.75,
+        "toMinor": 14.75
+    },
+    {
+        "id": 209,
+        "name": "Deakin",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36387,
+                "candidate_name": "GREGG, Matt",
+                "votesTotal": 49947,
+                "votesPercent": 49.81,
+                "swing": 4.5,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36712,
+                "candidate_name": "SUKKAR, Michael",
+                "votesTotal": 50322,
+                "votesPercent": 50.19,
+                "swing": -4.5,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -4.5,
+        "tppLabor": 4.5,
+        "toMajor": -6.11,
+        "toMinor": 6.11
+    },
+    {
+        "id": 210,
+        "name": "Dunkley",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36389,
+                "candidate_name": "MURPHY, Peta",
+                "votesTotal": 53865,
+                "votesPercent": 56.27,
+                "swing": 3.53,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36713,
+                "candidate_name": "COOMBES, Sharn",
+                "votesTotal": 41857,
+                "votesPercent": 43.73,
+                "swing": -3.53,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -3.53,
+        "tppLabor": 3.53,
+        "toMajor": -5.68,
+        "toMinor": 5.68
+    },
+    {
+        "id": 211,
+        "name": "Flinders",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36714,
+                "candidate_name": "McKENZIE, Zoe",
+                "votesTotal": 56075,
+                "votesPercent": 56.7,
+                "swing": 1.06,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36393,
+                "candidate_name": "SNOWBALL, Surbhi",
+                "votesTotal": 42827,
+                "votesPercent": 43.3,
+                "swing": -1.06,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 1.06,
+        "tppLabor": -1.06,
+        "toMajor": -6.24,
+        "toMinor": 6.24
+    },
+    {
+        "id": 321,
+        "name": "Fraser",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36716,
+                "candidate_name": "WOOD, David",
+                "votesTotal": 30850,
+                "votesPercent": 33.5,
+                "swing": 1.55,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36385,
+                "candidate_name": "MULINO, Daniel",
+                "votesTotal": 61251,
+                "votesPercent": 66.5,
+                "swing": -1.55,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 1.55,
+        "tppLabor": -1.55,
+        "toMajor": -9.58,
+        "toMinor": 9.58
+    },
+    {
+        "id": 212,
+        "name": "Gellibrand",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36718,
+                "candidate_name": "CLARK, Monica",
+                "votesTotal": 35459,
+                "votesPercent": 38.46,
+                "swing": 1.48,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36388,
+                "candidate_name": "WATTS, Tim",
+                "votesTotal": 56738,
+                "votesPercent": 61.54,
+                "swing": -1.48,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 1.48,
+        "tppLabor": -1.48,
+        "toMajor": -8.29,
+        "toMinor": 8.29
+    },
+    {
+        "id": 213,
+        "name": "Gippsland",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36048,
+                "candidate_name": "CHESTER, Darren",
+                "votesTotal": 71205,
+                "votesPercent": 70.57,
+                "swing": 3.9,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36392,
+                "candidate_name": "LANGLEY, Jannette",
+                "votesTotal": 29701,
+                "votesPercent": 29.43,
+                "swing": -3.9,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 3.9,
+        "tppLabor": -3.9,
+        "toMajor": -3.82,
+        "toMinor": 3.82
+    },
+    {
+        "id": 214,
+        "name": "Goldstein",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36074,
+                "candidate_name": "DANIEL, Zoe",
+                "votesTotal": 51861,
+                "votesPercent": 52.87,
+                "swing": 52.87,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 36717,
+                "candidate_name": "WILSON, Tim",
+                "votesTotal": 46226,
+                "votesPercent": 47.13,
+                "swing": 47.13,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -2.99,
+        "tppLabor": 2.99,
+        "toMajor": -29.59,
+        "toMinor": 29.59
+    },
+    {
+        "id": 309,
+        "name": "Gorton",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36421,
+                "candidate_name": "O'CONNOR, Brendan",
+                "votesTotal": 55434,
+                "votesPercent": 59.97,
+                "swing": -4.27,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36719,
+                "candidate_name": "FLETCHER, John",
+                "votesTotal": 37000,
+                "votesPercent": 40.03,
+                "swing": 4.27,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 4.27,
+        "tppLabor": -4.27,
+        "toMajor": -7.43,
+        "toMinor": 7.43
+    },
+    {
+        "id": 326,
+        "name": "Hawke",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36426,
+                "candidate_name": "RAE, Sam",
+                "votesTotal": 50241,
+                "votesPercent": 57.63,
+                "swing": -2.59,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36715,
+                "candidate_name": "HAQUE, Enamul",
+                "votesTotal": 36943,
+                "votesPercent": 42.37,
+                "swing": 2.59,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 2.59,
+        "tppLabor": -2.59,
+        "toMajor": 0,
+        "toMinor": 0
+    },
+    {
+        "id": 215,
+        "name": "Higgins",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36732,
+                "candidate_name": "ALLEN, Katie",
+                "votesTotal": 45785,
+                "votesPercent": 47.94,
+                "swing": -4.67,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36433,
+                "candidate_name": "ANANDA-RAJAH, Michelle",
+                "votesTotal": 49726,
+                "votesPercent": 52.06,
+                "swing": 4.67,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -4.67,
+        "tppLabor": 4.67,
+        "toMajor": -4.09,
+        "toMinor": 4.09
+    },
+    {
+        "id": 216,
+        "name": "Holt",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36438,
+                "candidate_name": "FERNANDO, Cassandra",
+                "votesTotal": 50777,
+                "votesPercent": 57.12,
+                "swing": -1.51,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36722,
+                "candidate_name": "PERERA, Ranj",
+                "votesTotal": 38119,
+                "votesPercent": 42.88,
+                "swing": 1.51,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 1.51,
+        "tppLabor": -1.51,
+        "toMajor": -16.18,
+        "toMinor": 16.18
+    },
+    {
+        "id": 217,
+        "name": "Hotham",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36428,
+                "candidate_name": "O'NEIL, Clare",
+                "votesTotal": 64382,
+                "votesPercent": 64.25,
+                "swing": 3.07,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36720,
+                "candidate_name": "BEVINAKOPPA, Savitri",
+                "votesTotal": 35820,
+                "votesPercent": 35.75,
+                "swing": -3.07,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -3.07,
+        "tppLabor": 3.07,
+        "toMajor": -11.98,
+        "toMinor": 11.98
+    },
+    {
+        "id": 218,
+        "name": "Indi",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 32086,
+                "candidate_name": "HAINES, Helen",
+                "votesTotal": 59861,
+                "votesPercent": 58.94,
+                "swing": 7.55,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 36721,
+                "candidate_name": "LYMAN, Ross",
+                "votesTotal": 41703,
+                "votesPercent": 41.06,
+                "swing": -7.55,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -7.47,
+        "tppLabor": 7.47,
+        "toMajor": -13.72,
+        "toMinor": 13.72
+    },
+    {
+        "id": 219,
+        "name": "Isaacs",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36434,
+                "candidate_name": "DREYFUS, Mark",
+                "votesTotal": 55818,
+                "votesPercent": 56.85,
+                "swing": 0.39,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36725,
+                "candidate_name": "BEATON, Robbie",
+                "votesTotal": 42366,
+                "votesPercent": 43.15,
+                "swing": -0.39,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -0.39,
+        "tppLabor": 0.39,
+        "toMajor": -8.14,
+        "toMinor": 8.14
+    },
+    {
+        "id": 220,
+        "name": "Jagajaga",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36435,
+                "candidate_name": "THWAITES, Kate",
+                "votesTotal": 63122,
+                "votesPercent": 62.35,
+                "swing": 6.46,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36726,
+                "candidate_name": "TOMAR, Sahil",
+                "votesTotal": 38121,
+                "votesPercent": 37.65,
+                "swing": -6.46,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.46,
+        "tppLabor": 6.46,
+        "toMajor": -10.57,
+        "toMinor": 10.57
+    },
+    {
+        "id": 221,
+        "name": "Kooyong",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36081,
+                "candidate_name": "RYAN, Monique",
+                "votesTotal": 54276,
+                "votesPercent": 52.94,
+                "swing": 52.94,
+                "party_short": "IND",
+                "party_long": "Independent"
+            },
+            {
+                "candidate_id": 36729,
+                "candidate_name": "FRYDENBERG, Josh",
+                "votesTotal": 48241,
+                "votesPercent": 47.06,
+                "swing": 47.06,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -2.21,
+        "tppLabor": 2.21,
+        "toMajor": -16.66,
+        "toMinor": 16.66
+    },
+    {
+        "id": 223,
+        "name": "La Trobe",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36734,
+                "candidate_name": "WOOD, Jason",
+                "votesTotal": 53803,
+                "votesPercent": 58.69,
+                "swing": 3.56,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36458,
+                "candidate_name": "ABHIMANYU KUMAR,",
+                "votesTotal": 37869,
+                "votesPercent": 41.31,
+                "swing": -3.56,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 3.56,
+        "tppLabor": -3.56,
+        "toMajor": -8.54,
+        "toMinor": 8.54
+    },
+    {
+        "id": 222,
+        "name": "Lalor",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36443,
+                "candidate_name": "RYAN, Joanne",
+                "votesTotal": 55613,
+                "votesPercent": 62.82,
+                "swing": 0.36,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36740,
+                "candidate_name": "GADDIPATI, Ravi",
+                "votesTotal": 32909,
+                "votesPercent": 37.18,
+                "swing": -0.36,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -0.36,
+        "tppLabor": 0.36,
+        "toMajor": -12.83,
+        "toMinor": 12.83
+    },
+    {
+        "id": 322,
+        "name": "Macnamara",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36736,
+                "candidate_name": "HARKIN, Colleen",
+                "votesTotal": 35120,
+                "votesPercent": 37.75,
+                "swing": -7.34,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36436,
+                "candidate_name": "BURNS, Josh",
+                "votesTotal": 57911,
+                "votesPercent": 62.25,
+                "swing": 7.34,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -7.34,
+        "tppLabor": 7.34,
+        "toMajor": -8.39,
+        "toMinor": 8.39
+    },
+    {
+        "id": 224,
+        "name": "Mallee",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36060,
+                "candidate_name": "WEBSTER, Anne",
+                "votesTotal": 70523,
+                "votesPercent": 68.99,
+                "swing": 3.31,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 36439,
+                "candidate_name": "HART, Carole",
+                "votesTotal": 31706,
+                "votesPercent": 31.01,
+                "swing": -3.31,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 3.31,
+        "tppLabor": -3.31,
+        "toMajor": 3.47,
+        "toMinor": -3.47
+    },
+    {
+        "id": 225,
+        "name": "Maribyrnong",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36441,
+                "candidate_name": "SHORTEN, Bill",
+                "votesTotal": 58679,
+                "votesPercent": 62.45,
+                "swing": 2.14,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36728,
+                "candidate_name": "D'SILVA, Mira",
+                "votesTotal": 35289,
+                "votesPercent": 37.55,
+                "swing": -2.14,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -2.14,
+        "tppLabor": 2.14,
+        "toMajor": -12.13,
+        "toMinor": 12.13
+    },
+    {
+        "id": 226,
+        "name": "McEwen",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36724,
+                "candidate_name": "WELCH, Richard",
+                "votesTotal": 44721,
+                "votesPercent": 46.72,
+                "swing": 2.0,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36445,
+                "candidate_name": "MITCHELL, Rob",
+                "votesTotal": 50998,
+                "votesPercent": 53.28,
+                "swing": -2.0,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": 2.0,
+        "tppLabor": -2.0,
+        "toMajor": -3.9,
+        "toMinor": 3.9
+    },
+    {
+        "id": 228,
+        "name": "Melbourne",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36448,
+                "candidate_name": "PATERSON, Keir",
+                "votesTotal": 38456,
+                "votesPercent": 39.85,
+                "swing": 39.85,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36551,
+                "candidate_name": "BANDT, Adam",
+                "votesTotal": 58050,
+                "votesPercent": 60.15,
+                "swing": 60.15,
+                "party_short": "GVIC",
+                "party_long": "The Greens"
+            }
+        ],
+        "tppCoalition": -10.11,
+        "tppLabor": 10.11,
+        "toMajor": -0.99,
+        "toMinor": 0.99
+    },
+    {
+        "id": 229,
+        "name": "Menzies",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36453,
+                "candidate_name": "OAKLEY, Naomi",
+                "votesTotal": 49821,
+                "votesPercent": 49.32,
+                "swing": 6.34,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36733,
+                "candidate_name": "WOLAHAN, Keith",
+                "votesTotal": 51198,
+                "votesPercent": 50.68,
+                "swing": -6.34,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -6.34,
+        "tppLabor": 6.34,
+        "toMajor": -6.38,
+        "toMinor": 6.38
+    },
+    {
+        "id": 323,
+        "name": "Monash",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36737,
+                "candidate_name": "BROADBENT, Russell",
+                "votesTotal": 51156,
+                "votesPercent": 52.9,
+                "swing": -3.96,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36455,
+                "candidate_name": "O'DONNELL, Jessica",
+                "votesTotal": 45556,
+                "votesPercent": 47.1,
+                "swing": 3.96,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -3.96,
+        "tppLabor": 3.96,
+        "toMajor": -12.4,
+        "toMinor": 12.4
+    },
+    {
+        "id": 324,
+        "name": "Nicholls",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36061,
+                "candidate_name": "BIRRELL, Sam",
+                "votesTotal": 51221,
+                "votesPercent": 53.81,
+                "swing": 53.81,
+                "party_short": "NAT",
+                "party_long": "The Nationals"
+            },
+            {
+                "candidate_id": 37571,
+                "candidate_name": "PRIESTLY, Rob",
+                "votesTotal": 43970,
+                "votesPercent": 46.19,
+                "swing": 46.19,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -2.88,
+        "tppLabor": 2.88,
+        "toMajor": -14.95,
+        "toMinor": 14.95
+    },
+    {
+        "id": 232,
+        "name": "Scullin",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36447,
+                "candidate_name": "GILES, Andrew",
+                "votesTotal": 59761,
+                "votesPercent": 65.58,
+                "swing": -6.08,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36741,
+                "candidate_name": "PERERA, Virosh",
+                "votesTotal": 31361,
+                "votesPercent": 34.42,
+                "swing": 6.08,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": 6.08,
+        "tppLabor": -6.08,
+        "toMajor": -14.77,
+        "toMinor": 14.77
+    },
+    {
+        "id": 233,
+        "name": "Wannon",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36735,
+                "candidate_name": "TEHAN, Dan",
+                "votesTotal": 54517,
+                "votesPercent": 53.92,
+                "swing": 53.92,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 33601,
+                "candidate_name": "DYSON, Alex",
+                "votesTotal": 46584,
+                "votesPercent": 46.08,
+                "swing": 46.08,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -1.1,
+        "tppLabor": 1.1,
+        "toMajor": -13.69,
+        "toMinor": 13.69
+    },
+    {
+        "id": 234,
+        "name": "Wills",
+        "state": "VIC",
+        "tcp": [
+            {
+                "candidate_id": 36452,
+                "candidate_name": "KHALIL, Peter",
+                "votesTotal": 53415,
+                "votesPercent": 58.57,
+                "swing": 0.1,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36554,
+                "candidate_name": "JEFFORD, Sarah",
+                "votesTotal": 37783,
+                "votesPercent": 41.43,
+                "swing": -0.1,
+                "party_short": "GVIC",
+                "party_long": "The Greens"
+            }
+        ],
+        "tppCoalition": -0.06,
+        "tppLabor": 0.06,
+        "toMajor": -5.86,
+        "toMinor": 5.86
+    },
+    {
+        "id": 235,
+        "name": "Brand",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37186,
+                "candidate_name": "KING, Madeleine",
+                "votesTotal": 63829,
+                "votesPercent": 66.71,
+                "swing": 10.05,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36566,
+                "candidate_name": "HUDSON, Peter",
+                "votesTotal": 31852,
+                "votesPercent": 33.29,
+                "swing": -10.05,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -10.05,
+        "tppLabor": 10.05,
+        "toMajor": 1.98,
+        "toMinor": -1.98
+    },
+    {
+        "id": 317,
+        "name": "Burt",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 36569,
+                "candidate_name": "GOODE, David",
+                "votesTotal": 31846,
+                "votesPercent": 34.79,
+                "swing": -9.71,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37195,
+                "candidate_name": "KEOGH, Matt",
+                "votesTotal": 59704,
+                "votesPercent": 65.21,
+                "swing": 9.71,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -9.71,
+        "tppLabor": 9.71,
+        "toMajor": 0.21,
+        "toMinor": -0.21
+    },
+    {
+        "id": 236,
+        "name": "Canning",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 36571,
+                "candidate_name": "HASTIE, Andrew",
+                "votesTotal": 50513,
+                "votesPercent": 53.59,
+                "swing": -7.97,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37199,
+                "candidate_name": "HUNT, Amanda",
+                "votesTotal": 43751,
+                "votesPercent": 46.41,
+                "swing": 7.97,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -7.97,
+        "tppLabor": 7.97,
+        "toMajor": 0.04,
+        "toMinor": -0.04
+    },
+    {
+        "id": 237,
+        "name": "Cowan",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37205,
+                "candidate_name": "ALY, Anne",
+                "votesTotal": 60625,
+                "votesPercent": 60.82,
+                "swing": 9.96,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36574,
+                "candidate_name": "CONNELLY, Vince",
+                "votesTotal": 39059,
+                "votesPercent": 39.18,
+                "swing": -9.96,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -9.96,
+        "tppLabor": 9.96,
+        "toMajor": -0.25,
+        "toMinor": 0.25
+    },
+    {
+        "id": 238,
+        "name": "Curtin",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 36578,
+                "candidate_name": "HAMMOND, Celia",
+                "votesTotal": 51190,
+                "votesPercent": 48.74,
+                "swing": 48.74,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 36589,
+                "candidate_name": "CHANEY, Kate",
+                "votesTotal": 53847,
+                "votesPercent": 51.26,
+                "swing": 51.26,
+                "party_short": "IND",
+                "party_long": "Independent"
+            }
+        ],
+        "tppCoalition": -8.35,
+        "tppLabor": 8.35,
+        "toMajor": -16.52,
+        "toMinor": 16.52
+    },
+    {
+        "id": 312,
+        "name": "Durack",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 36582,
+                "candidate_name": "PRICE, Melissa",
+                "votesTotal": 48583,
+                "votesPercent": 54.27,
+                "swing": -9.22,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37294,
+                "candidate_name": "RILEY, Jeremiah",
+                "votesTotal": 40940,
+                "votesPercent": 45.73,
+                "swing": 9.22,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -9.22,
+        "tppLabor": 9.22,
+        "toMajor": -2.26,
+        "toMinor": 2.26
+    },
+    {
+        "id": 239,
+        "name": "Forrest",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37300,
+                "candidate_name": "ENGLISH, Bronwen",
+                "votesTotal": 43465,
+                "votesPercent": 45.71,
+                "swing": 10.29,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36584,
+                "candidate_name": "MARINO, Nola",
+                "votesTotal": 51625,
+                "votesPercent": 54.29,
+                "swing": -10.29,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -10.29,
+        "tppLabor": 10.29,
+        "toMajor": -3.06,
+        "toMinor": 3.06
+    },
+    {
+        "id": 240,
+        "name": "Fremantle",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37314,
+                "candidate_name": "WILSON, Josh",
+                "votesTotal": 65585,
+                "votesPercent": 66.89,
+                "swing": 9.97,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36587,
+                "candidate_name": "KOUL, Bill",
+                "votesTotal": 32468,
+                "votesPercent": 33.11,
+                "swing": -9.97,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -9.97,
+        "tppLabor": 9.97,
+        "toMajor": -4.8,
+        "toMinor": 4.8
+    },
+    {
+        "id": 305,
+        "name": "Hasluck",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 36590,
+                "candidate_name": "WYATT, Ken",
+                "votesTotal": 43347,
+                "votesPercent": 44.0,
+                "swing": -11.89,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            },
+            {
+                "candidate_id": 37317,
+                "candidate_name": "LAWRENCE, Tania",
+                "votesTotal": 55166,
+                "votesPercent": 56.0,
+                "swing": 11.89,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            }
+        ],
+        "tppCoalition": -11.89,
+        "tppLabor": 11.89,
+        "toMajor": -1.14,
+        "toMinor": 1.14
+    },
+    {
+        "id": 242,
+        "name": "Moore",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37321,
+                "candidate_name": "FRENCH, Tom",
+                "votesTotal": 51573,
+                "votesPercent": 49.34,
+                "swing": 10.96,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36592,
+                "candidate_name": "GOODENOUGH, Ian",
+                "votesTotal": 52958,
+                "votesPercent": 50.66,
+                "swing": -10.96,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -10.96,
+        "tppLabor": 10.96,
+        "toMajor": -1.21,
+        "toMinor": 1.21
+    },
+    {
+        "id": 243,
+        "name": "O'Connor",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37323,
+                "candidate_name": "WELDON, Shaneane",
+                "votesTotal": 41614,
+                "votesPercent": 43.03,
+                "swing": 8.44,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36594,
+                "candidate_name": "WILSON, Rick",
+                "votesTotal": 55104,
+                "votesPercent": 56.97,
+                "swing": -8.44,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -8.44,
+        "tppLabor": 8.44,
+        "toMajor": -4.43,
+        "toMinor": 4.43
+    },
+    {
+        "id": 244,
+        "name": "Pearce",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37326,
+                "candidate_name": "ROBERTS, Tracey",
+                "votesTotal": 56040,
+                "votesPercent": 59.04,
+                "swing": 14.23,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36598,
+                "candidate_name": "AITKEN, Linda",
+                "votesTotal": 38876,
+                "votesPercent": 40.96,
+                "swing": -14.23,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -14.23,
+        "tppLabor": 14.23,
+        "toMajor": -1.44,
+        "toMinor": 1.44
+    },
+    {
+        "id": 245,
+        "name": "Perth",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37327,
+                "candidate_name": "GORMAN, Patrick",
+                "votesTotal": 66151,
+                "votesPercent": 64.8,
+                "swing": 11.57,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36601,
+                "candidate_name": "DWYER, David",
+                "votesTotal": 35930,
+                "votesPercent": 35.2,
+                "swing": -11.57,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -11.57,
+        "tppLabor": 11.57,
+        "toMajor": -5.85,
+        "toMinor": 5.85
+    },
+    {
+        "id": 247,
+        "name": "Swan",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37333,
+                "candidate_name": "MASCARENHAS, Zaneta",
+                "votesTotal": 58796,
+                "votesPercent": 58.77,
+                "swing": 11.99,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36607,
+                "candidate_name": "McSWEENEY, Kristy",
+                "votesTotal": 41240,
+                "votesPercent": 41.23,
+                "swing": -11.99,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -11.99,
+        "tppLabor": 11.99,
+        "toMajor": -6.75,
+        "toMinor": 6.75
+    },
+    {
+        "id": 248,
+        "name": "Tangney",
+        "state": "WA",
+        "tcp": [
+            {
+                "candidate_id": 37337,
+                "candidate_name": "LIM, Sam",
+                "votesTotal": 56331,
+                "votesPercent": 52.38,
+                "swing": 11.88,
+                "party_short": "ALP",
+                "party_long": "Australian Labor Party"
+            },
+            {
+                "candidate_id": 36608,
+                "candidate_name": "MORTON, Ben",
+                "votesTotal": 51217,
+                "votesPercent": 47.62,
+                "swing": -11.88,
+                "party_short": "LIB",
+                "party_long": "Liberal"
+            }
+        ],
+        "tppCoalition": -11.88,
+        "tppLabor": 11.88,
+        "toMajor": -1.52,
+        "toMinor": 1.52
+    }
+]
