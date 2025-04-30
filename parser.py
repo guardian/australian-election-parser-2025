@@ -1,4 +1,4 @@
-import simplejson as json
+import json
 from ftplib import FTP
 import os
 from zipfile import ZipFile
