@@ -381,7 +381,9 @@ def burnfeeds(uploadPath="2025/05/aus-election/results-data"):
     senate_data = senate_render(googledoc)
     
     # Create and upload feed data
-    updated = datetime.now().isoformat()
+    updated = datetime.now(aest).isoformat()
+    print(f"Updating feed with {updated}")
+    # dt_aest = aest.localize(dt_naive)
     feed = {
         'updated': updated,
         'ticker': ticker,
