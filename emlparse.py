@@ -134,11 +134,11 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 
 				major_national_swing = major_national_pct - majorVote2019
 				minor_national_swing = minor_national_pct - minorVote2019
-				print("major_national_swing: ", major_national_swing)
-				print("minor_national_swing: ", minor_national_swing)
+				print("major_national_swing: ", round(major_national_swing,2))
+				print("minor_national_swing: ", round(minor_national_swing,2))
 
-				results_json['nationalSwing']['toMajor'] = major_national_swing
-				results_json['nationalSwing']['toMinor'] = minor_national_swing
+				results_json['nationalSwing']['toMajor'] = round(major_national_swing,2)
+				results_json['nationalSwing']['toMinor'] = round(minor_national_swing,2)
 
 				summary_json['enrollment'] = int(election['House']['Analysis']['National']['Enrolment'])
 				summary_json['votesCountedPercent'] = float(election['House']['Analysis']['National']['FirstPreferences']['Total']['Votes']['@Percentage'])
@@ -224,8 +224,16 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 						for coalition in twoPartyPreferred
 					]		
 
-					swing_json['tppCoalition'] = electorates_json['twoPartyPreferred'][0]['swing']
-					swing_json['tppLabor'] = electorates_json['twoPartyPreferred'][1]['swing']
+					# AEC sometimes reports swing without votes? Not sure why	
+
+					# print(electorates_json['twoPartyPreferred'])
+
+					if electorates_json['twoPartyPreferred'][0]['votesTotal'] == 0 and electorates_json['twoPartyPreferred'][1]['votesTotal'] == 0:
+						swing_json['tppCoalition'] = 0
+						swing_json['tppLabor'] = 0
+					else:	
+						swing_json['tppCoalition'] = electorates_json['twoPartyPreferred'][0]['swing']
+						swing_json['tppLabor'] = electorates_json['twoPartyPreferred'][1]['swing']
 
 					# Calculate the major party - Independent/minor party swing
 
@@ -254,8 +262,19 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 						total_this_election = major_party_this_election + minor_ind_this_election
 
 						major_party_last_election_pct = major_party_last_election/total_last_election * 100
-						major_party_this_election_pct = major_party_this_election/total_this_election * 100
-						major_party_swing = major_party_this_election_pct - major_party_last_election_pct
+						
+						# Check if there are votes yet
+
+						if total_this_election > 0:
+							
+							major_party_this_election_pct = major_party_this_election/total_this_election * 100
+							major_party_swing = major_party_this_election_pct - major_party_last_election_pct
+
+						# No votes, set to zero
+
+						else:
+							major_party_this_election_pct = 0
+							major_party_swing = 0
 
 						# print("major_party_this_election", major_party_this_election,"major_party_last_election",major_party_last_election)
 						# print("minor_party_this_election", minor_ind_this_election,"minor_party_last_election",minor_ind_last_election)

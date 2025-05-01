@@ -16,14 +16,15 @@ from feedburner import burnfeeds
 # the 2022 election ID for testing is 27966
 # Make sure it is correct on the night
 
-electionID = '27966'
+electionID = '31496'
 
 if electionID != '31496':
 	print("WARNING: USING OLD ELECTION ID")
 
 # Set to mediafeed on election night
-ftpPath = 'mediafeedarchive.aec.gov.au'
-# ftpPath = 'mediafeed.aec.gov.au'	
+# ftpPath = 'mediafeedarchive.aec.gov.au'
+
+ftpPath = 'mediafeed.aec.gov.au'	
 
 if ftpPath != 'mediafeed.aec.gov.au':
 	print("WARNING: USING THE MEDIA ARCHIVE")
@@ -38,12 +39,13 @@ if resultsTest:
 	print("WARNING: RUNNING A TEST USING OLD RESULTS")
 
 # True if we want to upload results to s3 on election night, false for local testing
-upload = False
+upload = True
 
 if not upload:
 	print("WARNING: UPLOADING SWITCHED OFF")
 
-# True for election night, false if you want to upload to results-data-test
+# Determines the upload path, True for election night, false if you want to upload to results-data-test
+
 uploadToProd = False
 
 if not uploadToProd:
@@ -55,7 +57,7 @@ uploadPath = "2025/05/aus-election/results-data"
 if not uploadToProd:
 	uploadPath = "2025/05/aus-election/results-data-test"
 
-# If we're running a test, the starting time of the test
+# If we're running a test, the starting time of the test. Usually start 6pm on an election night
 
 testTime = datetime.strptime("2022-05-21 18:00","%Y-%m-%d %H:%M")
 
@@ -216,7 +218,7 @@ def parse_results(test):
 
 	print("Done, results all saved")
 	ftp.quit()
-	burnfeeds()
+	burnfeeds(uploadPath=uploadPath)
 
 # Use scheduler to time function every 2 minutes
 
@@ -224,7 +226,7 @@ if not resultsTest:
 
 	parse_results(resultsTest)
 
-	schedule.every(2).minutes.do(parse_results,resultsTest)
+	schedule.every(1).minutes.do(parse_results,resultsTest)
 
 	while True:
 		schedule.run_pending()

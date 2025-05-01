@@ -4,14 +4,17 @@ from datetime import datetime
 from typing import Dict, List, Optional, Union
 import math
 from utils import get_json, get_local_json, get_latest_feed, upload_to_s3, save_to_file
+import pytz
+
+aest = pytz.timezone("Australia/Sydney") 
 
 startTime = datetime.now()
 
 # The primary vote for the coalition in 2019
-coalition_old_primary = 41.44
+# coalition_old_primary = 41.44
 
 # The primary vote for the coalition in 2022
-# coalition_new_primary = 35.7
+coalition_old_primary  = 35.7
 
 if coalition_old_primary == 41.44:
     print("WARNING: USING OLD PRIMARY COALITION")
@@ -21,20 +24,20 @@ upload = True
 if not upload:
     print("WARNING: NOT UPLOADING TO SERVER")
 
-uploadElectorates = False
-if not uploadElectorates:
-    print("WARNING: NOT UPLOADING ELECTORATES")
+# uploadElectorates = False
+# if not uploadElectorates:
+#     print("WARNING: NOT UPLOADING ELECTORATES")
 
-config = {
-    "title": "",
-    "docData": "",
-    "path": "embed/aus/2025/02/aus-election/results-data"
-}
+# config = {
+#     "title": "",
+#     "docData": "",
+#     "path": "embed/aus/2025/02/aus-election/results-data"
+# }
 
 # https://interactive.guim.co.uk/docsdata/1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0.json
 googledoc_key = "1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0"
 
-url = "https://interactive.guim.co.uk/2022/05/aus-election/results-data"
+# url = "https://interactive.guim.co.uk/2022/05/aus-election/results-data"
 
 COALITION = ['lib', 'lnp', 'nat', 'clp']
 SENATE = ['lib', 'nat', 'on', 'pending', 'other', 'alp', 'grn', 'ca']
@@ -87,6 +90,8 @@ def compile(electorates: List[Dict], options: List[Dict], parties: Dict, summary
     ]
 
     displaySwing = False if options[0]['swing'] == "FALSE" else True
+    showSwingometer = False if options[0]['showSwingometer'] == "FALSE" else True
+    showNationalSwing = False if options[0]['showNationalSwing'] == "FALSE" else True
 
     render_data = {
         'TOTAL_SEATS': 151,
@@ -101,6 +106,8 @@ def compile(electorates: List[Dict], options: List[Dict], parties: Dict, summary
         'votesCountedPercent': summary_results['votesCountedPercent'],
         'nationalSwing': national_swing,
         'displaySwing': displaySwing,
+        'showSwingometer': showSwingometer,
+        'showNationalSwing': showNationalSwing,
         'outcome': options[0]['outcome']
     }
 
@@ -189,7 +196,13 @@ def create_ticker_feed(data: Dict) -> List[Dict]:
     for item in predictions:
         if item['timestamp']:
             # '05-31-2022 07:09:33'
-            item['unix'] = int(datetime.strptime(item['timestamp'], "%m-%d-%Y %H:%M:%S").timestamp())
+            dt_naive = datetime.strptime(item['timestamp'], "%m-%d-%Y %H:%M:%S")
+            # Localize to AEST
+            dt_aest = aest.localize(dt_naive)
+            # print(item['timestamp'], dt_aest.timestamp())
+            item['unix'] = int(dt_aest.timestamp())
+            # 2007-12-03T10:15:30+01:00[Europe/Paris]
+            item['isoTimestamp'] = dt_aest.isoformat()
             with_timestamp.append(item)
         else:
             without_timestamp.append(item)
@@ -311,7 +324,7 @@ def senate_render(data: Dict) -> Dict:
 
     return render_data
 
-def burnfeeds():
+def burnfeeds(uploadPath="2025/05/aus-election/results-data"):
     # Fetch Google doc data
     
     googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
@@ -354,14 +367,14 @@ def burnfeeds():
     # Upload electorates data
     electorates_data_buffer = json.dumps(electorates_data).encode()
     if upload:
-        upload_to_s3(f"{config['path']}/electorates.json", electorates_data_buffer)
+        upload_to_s3(f"{uploadPath}/electorates.json", electorates_data_buffer)
     save_to_file("results/electorates.json", electorates_data_buffer)
     
     # Process and upload firewire data
     firewire = compile(googledoc['electorates'], googledoc['options'], parties, summary_results, latest_data['nationalSwing'])
     firewire_data_buffer = json.dumps(firewire).encode()
     if upload:
-        upload_to_s3(f"{config['path']}/firewire.json", firewire_data_buffer)
+        upload_to_s3(f"{uploadPath}/firewire.json", firewire_data_buffer)
     save_to_file("results/firewire.json", firewire_data_buffer)    
 
     # Process senate data
@@ -378,19 +391,19 @@ def burnfeeds():
     
     feed_data_buffer = json.dumps(feed).encode()
     if upload:
-        upload_to_s3(f"{config['path']}/feed.json", feed_data_buffer)
+        upload_to_s3(f"{uploadPath}/feed.json", feed_data_buffer)
     save_to_file("results/feed.json", feed_data_buffer)    
 
     # Upload last updated timestamp
     last_updated_buffer = json.dumps({'updated': updated}).encode()
     if upload:
-        upload_to_s3(f"{config['path']}/lastUpdated.json", last_updated_buffer)
+        upload_to_s3(f"{uploadPath}/lastUpdated.json", last_updated_buffer)
     save_to_file("results/lastUpdated.json", last_updated_buffer)    
 
     # Upload swing data
     swing_feed_buffer = json.dumps(swing).encode()
     if upload:
-        upload_to_s3(f"{config['path']}/swing.json", swing_feed_buffer)
+        upload_to_s3(f"{uploadPath}/swing.json", swing_feed_buffer)
     save_to_file("results/swing.json", swing_feed_buffer)    
     
     timeRun = datetime.now() - startTime

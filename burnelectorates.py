@@ -6,13 +6,13 @@ import json
 
 googledoc_key = "1b6VI5L_olM-zpSLy2WkHQ7OXIysQ2KFOd-v5SztfoM0"
 startTime = datetime.now()
-uploadElectorates = False
+# uploadElectorates = True
 
-config = {
-    "title": "",
-    "docData": "",
-    "path": "embed/aus/2025/02/aus-election/results-data"
-}
+# config = {
+#     "title": "",
+#     "docData": "",
+#     "path": "embed/aus/2025/02/aus-election/results-data"
+# }
 
 def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, swing: List[Dict], parties: Dict) -> Dict:
     swing_time = True
@@ -100,7 +100,7 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
 
     return info
 
-def burnElectorates():
+def burnElectorates(uploadPath="2025/05/aus-election/results-data", uploadElectorates=True):
     # Fetch Google doc data
     
     googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
@@ -123,7 +123,6 @@ def burnElectorates():
     
     # Create data maps
     electorates_map = {item['electorate']: item for item in googledoc['electorates']}
-    print(electorates_map)
     places = [item['electorate'] for item in googledoc['electorates']]
     divisions = {item['name']: item for item in latest_data['divisions']}
 
@@ -146,7 +145,7 @@ def burnElectorates():
                 item['byMargin'] = info['twoParty'][0]['swing']
             
             electorate_info = json.dumps(info).encode()
-            upload_to_s3(f"{config['path']}/electorates/{item['id']}.json", electorate_info)
+            upload_to_s3(f"{uploadPath}/electorates/{item['id']}.json", electorate_info)
     
     timeRun = datetime.now() - startTime
     print(f"Finished in {timeRun}")
