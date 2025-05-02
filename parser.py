@@ -16,15 +16,17 @@ from feedburner import burnfeeds
 # the 2022 election ID for testing is 27966
 # Make sure it is correct on the night
 
-electionID = '31496'
+electionID = '27966'
+# electionID = '31496'
 
 if electionID != '31496':
 	print("WARNING: USING OLD ELECTION ID")
 
 # Set to mediafeed on election night
-# ftpPath = 'mediafeedarchive.aec.gov.au'
 
-ftpPath = 'mediafeed.aec.gov.au'	
+ftpPath = 'mediafeedarchive.aec.gov.au'
+
+# ftpPath = 'mediafeed.aec.gov.au'	
 
 if ftpPath != 'mediafeed.aec.gov.au':
 	print("WARNING: USING THE MEDIA ARCHIVE")
@@ -33,7 +35,7 @@ if ftpPath != 'mediafeed.aec.gov.au':
 verbose = False
 
 # Loops through old election data to simulate results night
-resultsTest = False
+resultsTest = True
 
 if resultsTest:
 	print("WARNING: RUNNING A TEST USING OLD RESULTS")
