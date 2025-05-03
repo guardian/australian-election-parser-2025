@@ -56,8 +56,24 @@ def candidate_party(candidate,candidateType):
 		else:
 			return 'Independent'
 
-def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
+def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload, electionID):
 	
+	# Set some variables
+
+	# It's the 2025 election
+
+	if electionID == '31496':
+		print("Using 2022 variables")
+		historicData = historicData2022
+		majorVote = majorVote2022
+		minorVote = minorVote2022
+
+	elif electionID == '27966':
+		print("Using 2019 variables")
+		historicData = historicData2019
+		majorVote = majorVote2019
+		minorVote = minorVote2019
+
 	#convert xml to json
 	
 	if local:
@@ -89,12 +105,13 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 				results_json['nationalSwing'] = {}
 
 				for coalition in election['House']['Analysis']['National']['TwoPartyPreferred']['Coalition']:
-					# print(coalition)
+					print(coalition)
 					if coalition['CoalitionIdentifier']['@ShortCode'] == "LNC":
 						results_json['nationalSwing']['tppCoalition'] = float(coalition['Votes']['@Swing'])
 					if coalition['CoalitionIdentifier']['@ShortCode'] == "ALP":
 						results_json['nationalSwing']['tppLabor'] = float(coalition['Votes']['@Swing'])	
 
+				print(election['House']['Analysis']['National']['TwoPartyPreferred']['Coalition'])
 				partyNational = election['House']['Analysis']['National']['FirstPreferences']['PartyGroup']
 					
 				results_json['partyNationalResults'] = [
@@ -127,15 +144,21 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 				print("minor_national_new: ", minor_national_new)
 				print("total_new: ", total_new)
 
-				major_national_pct = round(major_national_new / total_new * 100,2)
-				minor_national_pct = round(minor_national_new / total_new * 100,2)
-				print("major_national_pct: ", major_national_pct)
-				print("minor_national_pct: ", minor_national_pct)
+				if major_national_new > 0:
+					major_national_pct = round(major_national_new / total_new * 100,2)
+					minor_national_pct = round(minor_national_new / total_new * 100,2)
 
-				major_national_swing = major_national_pct - majorVote2019
-				minor_national_swing = minor_national_pct - minorVote2019
-				print("major_national_swing: ", round(major_national_swing,2))
-				print("minor_national_swing: ", round(minor_national_swing,2))
+
+					print("major_national_pct: ", major_national_pct)
+					print("minor_national_pct: ", minor_national_pct)
+
+					major_national_swing = major_national_pct - majorVote
+					minor_national_swing = minor_national_pct - minorVote
+					print("major_national_swing: ", round(major_national_swing,2))
+					print("minor_national_swing: ", round(minor_national_swing,2))
+				else:
+					major_national_swing = 0
+					minor_national_swing = 0
 
 				results_json['nationalSwing']['toMajor'] = round(major_national_swing,2)
 				results_json['nationalSwing']['toMinor'] = round(minor_national_swing,2)
@@ -228,18 +251,20 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload):
 
 					# print(electorates_json['twoPartyPreferred'])
 
+					# This needs to be fixed next election as the AEC can change the order
+
 					if electorates_json['twoPartyPreferred'][0]['votesTotal'] == 0 and electorates_json['twoPartyPreferred'][1]['votesTotal'] == 0:
 						swing_json['tppCoalition'] = 0
 						swing_json['tppLabor'] = 0
 					else:	
-						swing_json['tppCoalition'] = electorates_json['twoPartyPreferred'][0]['swing']
-						swing_json['tppLabor'] = electorates_json['twoPartyPreferred'][1]['swing']
+						swing_json['tppCoalition'] = electorates_json['twoPartyPreferred'][1]['swing']
+						swing_json['tppLabor'] = electorates_json['twoPartyPreferred'][0]['swing']
 
 					# Calculate the major party - Independent/minor party swing
 
-					if currentElectorate in historicData2019:
-						major_party_last_election = historicData2019[currentElectorate]["Major"]
-						minor_ind_last_election = historicData2019[currentElectorate]["Indie_and_Minor"]
+					if currentElectorate in historicData:
+						major_party_last_election = historicData[currentElectorate]["Major"]
+						minor_ind_last_election = historicData[currentElectorate]["Indie_and_Minor"]
 						total_last_election = major_party_last_election + minor_ind_last_election
 
 						major_party_this_election = 0

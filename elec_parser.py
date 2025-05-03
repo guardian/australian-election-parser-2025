@@ -14,7 +14,7 @@ if not upload:
 
 # True for election night, false if you want to upload to results-data-test
 
-uploadToProd = False
+uploadToProd = True
 
 if not uploadToProd:
 	print("WARNING: UPLOADING TO TEST DIRECTORY")
@@ -24,8 +24,6 @@ uploadPath = "2025/05/aus-election/results-data"
 
 if not uploadToProd:
 	uploadPath = "2025/05/aus-election/results-data-test"
-
-
 
 def doStuff():
 	burnElectorates(uploadPath=uploadPath, uploadElectorates=upload)

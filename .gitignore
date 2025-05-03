@@ -4,3 +4,8 @@ __pycache__
 /sample-data
 recentResults.json
 summaryResults.json
+analysis.py
+nsw-swing.csv
+qld-swing.csv
+swing-results.csv
+

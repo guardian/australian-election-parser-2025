@@ -10,15 +10,6 @@ aest = pytz.timezone("Australia/Sydney")
 
 startTime = datetime.now()
 
-# The primary vote for the coalition in 2019
-# coalition_old_primary = 41.44
-
-# The primary vote for the coalition in 2022
-coalition_old_primary  = 35.7
-
-if coalition_old_primary == 41.44:
-    print("WARNING: USING OLD PRIMARY COALITION")
-
 upload = True
 
 if not upload:
@@ -118,7 +109,7 @@ def compile(electorates: List[Dict], options: List[Dict], parties: Dict, summary
     return render_data
 
 
-def create_table(data: List[Dict], party_map: List[Dict], swing: bool) -> List[Dict]:
+def create_table(data: List[Dict], party_map: List[Dict], swing: bool, coalition_old_primary: float) -> List[Dict]:
     # Build party map lookup
     p_map = {item['partyCode'].lower(): item for item in party_map}
     
@@ -148,7 +139,10 @@ def create_table(data: List[Dict], party_map: List[Dict], swing: bool) -> List[D
     # This uses the Coalition's combined primary vote ( NOT their 2pp and needs to be updated for new elections)
 
     if swing:
-        coalition_summary['Swing'] = coalition_summary['Votes (%)'] - coalition_old_primary
+        if coalition_summary['Votes (%)'] > 0:
+            coalition_summary['Swing'] = coalition_summary['Votes (%)'] - coalition_old_primary
+        else:
+            coalition_summary['Swing'] = 0
 
     others = [
         "Australian Labor Party", "The Greens", "Independent",
@@ -324,7 +318,20 @@ def senate_render(data: Dict) -> Dict:
 
     return render_data
 
-def burnfeeds(uploadPath="2025/05/aus-election/results-data"):
+def burnfeeds(uploadPath="2025/05/aus-election/results-data", electionID='31496'):
+    
+    # Set some variables
+
+    # It's the 2025 election
+
+    if electionID == '31496':
+        # Coalition primary vote in 2022
+        coalition_old_primary = 35.7
+
+    elif electionID == '27966':
+        # Coalition primary vote in 2019
+        coalition_old_primary = 41.44
+    
     # Fetch Google doc data
     
     googledoc = requests.get(f"https://interactive.guim.co.uk/docsdata/{googledoc_key}.json").json()['sheets']
@@ -354,7 +361,7 @@ def burnfeeds(uploadPath="2025/05/aus-election/results-data"):
     parties = {item['partyCode'].lower(): item for item in googledoc['partyNames']}
     
     # Process data
-    parties_table_data = create_table(latest_data['partyNationalResults'], googledoc['partyNames'], True)
+    parties_table_data = create_table(latest_data['partyNationalResults'], googledoc['partyNames'], True, coalition_old_primary)
     ticker = create_ticker_feed(googledoc)
     googledoc['parties'] = parties
     

@@ -16,17 +16,17 @@ from feedburner import burnfeeds
 # the 2022 election ID for testing is 27966
 # Make sure it is correct on the night
 
-electionID = '27966'
-# electionID = '31496'
+# electionID = '27966'
+electionID = '31496'
 
 if electionID != '31496':
 	print("WARNING: USING OLD ELECTION ID")
 
 # Set to mediafeed on election night
 
-ftpPath = 'mediafeedarchive.aec.gov.au'
+# ftpPath = 'mediafeedarchive.aec.gov.au'
 
-# ftpPath = 'mediafeed.aec.gov.au'	
+ftpPath = 'mediafeed.aec.gov.au'	
 
 if ftpPath != 'mediafeed.aec.gov.au':
 	print("WARNING: USING THE MEDIA ARCHIVE")
@@ -35,7 +35,7 @@ if ftpPath != 'mediafeed.aec.gov.au':
 verbose = False
 
 # Loops through old election data to simulate results night
-resultsTest = True
+resultsTest = False
 
 if resultsTest:
 	print("WARNING: RUNNING A TEST USING OLD RESULTS")
@@ -48,7 +48,7 @@ if not upload:
 
 # Determines the upload path, True for election night, false if you want to upload to results-data-test
 
-uploadToProd = False
+uploadToProd = True
 
 if not uploadToProd:
 	print("WARNING: UPLOADING TO TEST DIRECTORY")
@@ -175,7 +175,8 @@ def parse_results(test):
 						local=False, 
 						timestamp=latestTimestampStr,
 						uploadPath=uploadPath,
-						upload=upload)
+						upload=upload,
+						electionID=electionID)
 			
 			logresults.saveRecentResults(timestamp=latestTimestampStr, 
 								uploadPath=uploadPath,
@@ -212,7 +213,8 @@ def parse_results(test):
 						local=False, 
 						timestamp=latestTimestampStr,
 						uploadPath=uploadPath,
-						upload=upload)
+						upload=upload,
+						electionID=electionID)
 			
 		logresults.saveRecentResults(timestamp=latestTimestampStr, 
 								uploadPath=uploadPath,
@@ -220,7 +222,7 @@ def parse_results(test):
 
 	print("Done, results all saved")
 	ftp.quit()
-	burnfeeds(uploadPath=uploadPath)
+	burnfeeds(uploadPath=uploadPath, electionID=electionID)
 
 # Use scheduler to time function every 2 minutes
 
