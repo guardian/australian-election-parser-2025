@@ -41,7 +41,7 @@ if resultsTest:
 	print("WARNING: RUNNING A TEST USING OLD RESULTS")
 
 # True if we want to upload results to s3 on election night, false for local testing
-upload = True
+upload = False
 
 if not upload:
 	print("WARNING: UPLOADING SWITCHED OFF")

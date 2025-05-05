@@ -98,6 +98,9 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload, electionID
 				results_json['votesCountedPercent'] = float(election['House']['Analysis']['National']['FirstPreferences']['Total']['Votes']['@Percentage'])
 				results_json['votesCounted'] = int(election['House']['Analysis']['National']['FirstPreferences']['Total']['Votes']['#text'])
 
+
+
+
 				print("Votes counted", results_json['votesCounted'], "percent", results_json['votesCountedPercent'])
 
 				natSwing = election['House']['Analysis']['National']['TwoPartyPreferred']
@@ -193,6 +196,9 @@ def eml_to_JSON(eml_file, type, local, timestamp, uploadPath, upload, electionID
 
 					electorates_json['enrollment'] = int(contest['Enrolment']['#text'])
 					electorates_json['votesCounted'] = int(contest['FirstPreferences']['Total']['Votes']['#text'])
+
+					electorates_json['tcpCountProgress'] = f"{contest['TwoCandidatePreferred']['@PollingPlacesReturned']} / {contest['TwoCandidatePreferred']['@PollingPlacesExpected']}"
+
 					candidates = contest['FirstPreferences']['Candidate']
 					electorates_json['candidates'] = [
 						{
