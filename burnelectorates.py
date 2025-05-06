@@ -95,7 +95,8 @@ def select_electorate(id: str, electorate: str, results: Dict, divisions: Dict, 
         'heldBy': result['incumbent'].lower(),
         'heldByName': parties[result['incumbent'].lower()]['partyName'],
         'percentageCounted': round((aec_result['votesCounted'] / aec_result['enrollment']) * 100, 1),
-        'swigInfo': swing_info
+        'swigInfo': swing_info,
+        "tcpCountProgress": aec_result["tcpCountProgress"]
     }
 
     return info
@@ -151,4 +152,4 @@ def burnElectorates(uploadPath="2025/05/aus-election/results-data", uploadElecto
     print(f"Finished in {timeRun}")
 
 if __name__ == "__main__":
-    burnElectorates()
+    burnElectorates(uploadPath="2025/05/aus-election/results-data", uploadElectorates=False)
